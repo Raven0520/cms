@@ -64,8 +64,9 @@ class ContentController extends CommonController
             if(!isset($_POST['content']) || !$_POST['content']){
                 return show (0,'文章不存在');
             }
+
             //判断是否为更新操作
-            if(!$_POST['news_id']){
+            if($_POST['news_id']){
                 return $this->save($_POST);
             }
 
@@ -88,50 +89,53 @@ class ContentController extends CommonController
 
             $webSiteMenu = D("Menu")->getBarMenus();
             $titleFontColor = C("TITLE_FONT_COLOR");
+            $copyfrom = C("COPY_FROM");
             $this->assign('webSiteMenu',$webSiteMenu);
             $this->assign('titleFontColor',$titleFontColor);
-            $this->assign('copyfrom',C("COPY_FROM"));
+            $this->assign('copyfrom',$copyfrom);
             $this->display();
         }
     }
 
     public function edit(){
         $newsId = $_GET['id'];
-        if (!$newsId){
-            //跳转回首页
+        if(!$newsId){
+            //执行跳转
             $this->redirect('/admin.php?c=content');
         }
         $news = D("News")->find($newsId);
-        if (!$news){
+        if(!$news){
             $this->redirect('/admin.php?c=content');
         }
         $newsContent = D("NewsContent")->find($newsId);
-        if ($newsContent){
+        if($newsContent){
             $news['content'] = $newsContent['content'];
         }
+
         $webSiteMenu = D("Menu")->getBarMenus();
 
         $this->assign('webSiteMenu',$webSiteMenu);
         $this->assign('titleFontColor',C("TITLE_FONT_COLOR"));
         $this->assign('copyfrom',C("COPY_FROM"));
+
         $this->assign('news',$news);
         $this->display();
     }
-    //编辑器内容修改保存操作
+
     public function save($data){
-        $newId = $data['news_id'];
+        $newsId = $data['news_id'];
         unset($data['news_id']);
 
-        try{
-            $id = D("News")->updateById($newId,$data);
-            $newsContentData = $data['content'];
-            $condId = D("NewsContent")->uodateNewsById($newId,$newsContentData);
+        try {
+            $id = D("News")->updateById($newsId,$data);
+            $newsContentData['content'] = $data['content'];
+            $condId = D("NewsContent")->updateNewsById($newsId,$newsContentData);
 
-            if ($id ===false || $condId === false){
+            if($id === false || $condId ===false){
                 return show(0,'更新失败');
             }
             return show(1,'更新成功');
-        }catch (Exception $e){
+        } catch (Exception $e ) {
             return show(0,$e->getMessage());
         }
     }

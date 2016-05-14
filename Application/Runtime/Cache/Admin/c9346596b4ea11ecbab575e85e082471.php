@@ -171,7 +171,7 @@
                                 <input value="<?php echo ($news["keywords"]); ?>" type="text" class="form-control" name="keywords" id="inputPassword3" placeholder="请填写关键词">
                             </div>
                         </div>
-
+                        <input type="hidden" name="news_id" value="<?php echo ($news["news_id"]); ?>" />
 
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
