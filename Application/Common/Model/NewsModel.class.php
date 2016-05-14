@@ -92,4 +92,14 @@ class NewsModel extends Model
 
         return $this->_db->where("news_id=".$id)->save($data);
     }
+
+    //文章管理页面更新排序功能
+    public function updateNewsListorderById($id,$listorder){
+        if(!$id || !is_numeric($id)){
+            throw_exception('ID不合法');
+        }
+
+        $data = array('listorder'=> intval($listorder));
+        return $this->_db->where('news_id='.$id)->save($data);
+    }
 }

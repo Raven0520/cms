@@ -79,7 +79,7 @@
                                 <volist name="news" id="new">
                                     <tr>
                                         <td><input type="checkbox" name="pushcheck" value="{$new.news_id}"></td>
-                                        <td><input size=4 type='text' name='' value=""/></td><!--6.7-->
+                                        <td><input size=4 type='text' name='listorder[{$new.news_id}]' value="{$new.listorder}"/></td><!--6.7-->
                                         <td>{$new.news_id}</td>
                                         <td>{$new.title}</td>
                                         <td>{$new.catid|getCatName=$webSiteMenu,###}</td>
@@ -108,6 +108,12 @@
                                 </ul>
 
                             </nav>
+                            <div>
+                                <button id="button-listorder" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus"
+                                                                                         aria-hidden="true"></span>更新排序
+                                </button>
+                            </div>
 
                         </form>
 

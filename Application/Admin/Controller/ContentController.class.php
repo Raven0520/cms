@@ -163,6 +163,33 @@ class ContentController extends CommonController
             return show(0,$e->getMessage());
         }
     }
+
+    //文章管理页面排序功能
+    public function listorder(){
+        $listorder = $_POST['listorder'];
+        $jumpUrl = $_SERVER['HTTP_REFERER'];
+        $errors = array();
+
+        try{
+            if($listorder){
+                //执行文章排序操作
+                foreach ($listorder as $newsId => $v){
+                    $id = D("News")->updateNewsListorderById($newsId,$v);
+
+                    if ($id === false){
+                        $errors[] = $newsId;
+                    }
+                }
+                if ($errors){
+                    return show(0,'排序失败-'.implode(',',$errors),array('jump_url'=>$jumpUrl));
+                }
+                return show(1,'排序成功',array('jump_url'=>$jumpUrl));
+            }
+        }catch (Exception $e){
+            return show(0,$e->getMessage());
+        }
+        return show(0,'排序文章失败',array('jump_url'=>$jumpUrl));
+    }
 }
 
 ?>
