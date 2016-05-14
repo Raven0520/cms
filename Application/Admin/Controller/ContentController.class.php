@@ -64,6 +64,10 @@ class ContentController extends CommonController
             if(!isset($_POST['content']) || !$_POST['content']){
                 return show (0,'文章不存在');
             }
+            //判断是否为更新操作
+            if(!$_POST['news_id']){
+                return $this->save($_POST);
+            }
 
             $newsId = D("News")->insert($_POST);
             if($newsId){
@@ -112,6 +116,24 @@ class ContentController extends CommonController
         $this->assign('copyfrom',C("COPY_FROM"));
         $this->assign('news',$news);
         $this->display();
+    }
+    //编辑器内容修改保存操作
+    public function save($data){
+        $newId = $data['news_id'];
+        unset($data['news_id']);
+
+        try{
+            $id = D("News")->updateById($newId,$data);
+            $newsContentData = $data['content'];
+            $condId = D("NewsContent")->uodateNewsById($newId,$newsContentData);
+
+            if ($id ===false || $condId === false){
+                return show(0,'更新失败');
+            }
+            return show(1,'更新成功');
+        }catch (Exception $e){
+            return show(0,$e->getMessage());
+        }
     }
 }
 
