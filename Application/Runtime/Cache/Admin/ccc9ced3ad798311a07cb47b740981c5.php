@@ -113,7 +113,7 @@
                             <span class="input-group-addon">栏目</span>
                             <select class="form-control" name="catid">
                                 <option value=''>全部分类</option>
-                                <?php if(is_array($webSiteMenu)): foreach($webSiteMenu as $key=>$sitenav): ?><option value="<?php echo ($sitenav["menu_id"]); ?>" <?php if(catid == $sitenav['menu_id']): ?>selected = "selected"<?php endif; ?> > <?php echo ($sitenav["name"]); ?></option><?php endforeach; endif; ?>
+                                <?php if(is_array($webSiteMenu)): foreach($webSiteMenu as $key=>$sitenav): ?><option value="<?php echo ($sitenav["menu_id"]); ?>"><?php echo ($sitenav["name"]); ?></option><?php endforeach; endif; ?>
                             </select>
                         </div>
                     </div>
@@ -163,8 +163,8 @@
                                             <?php echo (isThumb($new["thumb"])); ?>
                                         </td>
                                         <td><?php echo (date("Y-m-d H:i",$new["create_time"])); ?></td>
-                                        <td><span attr-status="" attr-id="" class="sing_cursor singcms-on-off"
-                                                  id="singcms-on-off"><?php echo (getMenuStatus($new["status"])); ?></span></td>
+                                        <td><span attr-status="<?php if($new['status'] == 1): ?>0<?php else: ?>1<?php endif; ?>" attr-id="<?php echo ($new["news_id"]); ?>" class="sing_cursor singcms-on-off"
+                                            id="singcms-on-off"><?php echo (getMenuStatus($new["status"])); ?></span></td>
                                         <td><span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true"
                                                   id="singcms-edit" attr-id="<?php echo ($new["news_id"]); ?>"></span>
                                             <a href="javascript:void(0)" id="singcms-delete" attr-id="<?php echo ($new["news_id"]); ?>" attr-message="删除">

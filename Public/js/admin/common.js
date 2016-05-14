@@ -20,7 +20,7 @@ $("#singcms-button-submit").click(function () {
     url = SCOPE.save_url;
     jump_url = SCOPE.jump_url;
     $.post(url,postData,function(result){
-        if(result.status == 1 ){
+        if(result.status === 1 ){
             //成功
             return dialog.success(result.message,jump_url);
         }else if(result.status === 0){
@@ -78,7 +78,7 @@ function todelete (url,data){
                 return dialog.error(s.message);
             }
         }
-    ,"JSON");
+        ,"JSON");
 }
 
 $('#button-listorder').click(function(){
@@ -97,6 +97,30 @@ $('#button-listorder').click(function(){
         }else if(result.status === 0){
             //失败
             return dialog.error(result.message,result['data']['jump_url']);
+        }
+    },"JSON");
+});
+
+//修改文章状态
+$(".singcms-table #singcms-on-off").on('click',function(){
+    var id = $(this).attr("attr-id");
+    var status =$(this).attr('attr-status');
+    var url = SCOPE.set_status_url;
+
+    data = {};
+    data['id'] = id;
+    data['status'] = status;
+
+    layer.open({
+        type:0,
+        title:'是否提交？',
+        btn:['Yes','No'],
+        icon:3,
+        closeBtn:2,
+        content:'是否确定修改状态',
+        scrollbar:true,
+        yes:function(){
+            todelete(url,data);
         }
     },"JSON");
 });

@@ -79,4 +79,17 @@ class NewsModel extends Model
 
         return $this->_db->where('news_id='.$id)->save($data);
     }
+
+    //修改状态的方法
+    public function updateStatusById($id,$status){
+        if(!is_numeric($status)){
+            throw_exception('status不能为非数字');
+        }
+        if(!$id || !is_numeric($id)){
+            throw_exception('ID不合法');
+        }
+        $data['status'] = $status;
+
+        return $this->_db->where("news_id=".$id)->save($data);
+    }
 }
