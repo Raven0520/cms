@@ -53,4 +53,45 @@ class PositionController extends CommonController
 
         $this->display();
     }
+
+    //改变推荐位状态
+    public function setStatus(){
+        try{
+            if($_POST){
+                $id = $_POST['id'];
+                $status = $_POST['status'];
+
+                if(!$id){
+                    return show(0,'ID不存在');
+                }
+
+                $res = D("Position")->updateStatusById($id,$status);
+
+                if($res){
+                    return show(1,'操作成功');
+                }else{
+                    return show(0,'操作失败');
+                }
+            }
+            return show(0,'没有提交内容');
+        }catch(Exception $e){
+            return show(0,$e->getMessage());
+        }
+    }
+
+    //获取推荐位编辑器内容
+    public function edit(){
+        $positionId = $_GET['id'];
+        if (!$positionId){
+            $this->redirect('/admin.php?c=position');
+        }
+        $positions = D("Position")->find($positionId);
+        if (!$positions){
+            $this->redirect('/admin.php?c=position');
+        }
+        
+        $this->assign('positions',$positions);
+
+        $this->display();
+    }
 }

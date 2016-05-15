@@ -4031,7 +4031,7 @@ tbody.collapse.in {
     position: relative;
     z-index: 2;
     float: left;
-    width: 50%;
+    width: 300px;
     margin-bottom: 0
 }
 
