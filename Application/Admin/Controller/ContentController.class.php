@@ -39,8 +39,12 @@ class ContentController extends CommonController
         $res = new \Think\Page($count,$pageSize);
         $pageres = $res->show();
 
+        //推荐位操作
+        $positions = D("Position")->getNormalPositions();
+
         $this->assign("pageres",$pageres);
         $this->assign("news",$news);
+        $this->assign('positons',$positions);
 
         $this->assign("webSiteMenu",D("Menu")->getBarMenus());
         $this->display();

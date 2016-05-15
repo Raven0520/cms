@@ -190,6 +190,13 @@
                             </div>
 
                         </form>
+                        <div class="input-group">
+                            <select class="form-control" name="position_id" id="select-push">
+                                <option value="0">请选择推荐位进行推送</option>
+                                <?php if(is_array($positions)): foreach($positions as $key=>$position): ?><opiton value="<?php echo ($position["id"]); ?>"><?php echo ($position["name"]); ?></opiton><?php endforeach; endif; ?>
+                            </select>
+                            <button id="singcms-push" type="button" class="btn btn-primary">推送</button>
+                        </div>
 
                     </div>
                 </div>

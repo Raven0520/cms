@@ -116,6 +116,15 @@
                             </div>
 
                         </form>
+                        <div class="input-group">
+                            <select class="form-control" name="position_id" id="select-push">
+                                <option value="0">请选择推荐位进行推送</option>
+                                <foreach name="positions" item="position">
+                                    <opiton value="{$position.id}">{$position.name}</opiton>
+                                </foreach>
+                            </select>
+                            <button id="singcms-push" type="button" class="btn btn-primary">推送</button>
+                        </div>
 
                     </div>
                 </div>
