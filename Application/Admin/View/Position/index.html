@@ -71,17 +71,16 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <volist name="menus" id="menu">
+                                <volist name="Positions" id="position">
                                     <tr>
-                                        <td><input size="4" type="text" name="listorder[{$menu.menu_id}]" value="{$menu.listorder}"/></td>
-                                        <td>{$menu.menu_id}</td>
-                                        <td>{$menu.name}</td>
-                                        <td>{$menu.m}</td>
-                                        <td>{$menu.type|getMenuType}</td>
-                                        <td>{$menu.status|getMenuStatus}</td>
+                                        <td>{$position.id}</td>
+                                        <td>{$position.name}</td>
+                                        <td>{$position.create_time|date="Y-m-d H:i",###}</td>
+                                        <td><span attr-status="<if condition="$position['status'] eq 1">0<else/>1</if>" attr-id="{$position.id}" class="sing_cursor singcms-on-off"
+                                            id="singcms-on-off">{$position.status|getMenuStatus}</span></td>
                                         <td><span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit"
-                                                  attr-id="{$menu.menu_id}"></span>
-                                            <a href="javascript:void(0)" attr-id="{$menu.menu_id}" id="singcms-delete" attr-a="menu" attr-message="删除" class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                                                  attr-id="{$position.id}"></span>
+                                            <a href="javascript:void(0)" attr-id="{$position.id}" id="singcms-delete" attr-a="menu" attr-message="删除" class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
                                         </td>
                                     </tr>
                                 </volist>

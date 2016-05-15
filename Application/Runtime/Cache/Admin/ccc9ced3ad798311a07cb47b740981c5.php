@@ -163,6 +163,7 @@
                                             <?php echo (isThumb($new["thumb"])); ?>
                                         </td>
                                         <td><?php echo (date("Y-m-d H:i",$new["create_time"])); ?></td>
+                                        <!--将status转化成文字-->
                                         <td><span attr-status="<?php if($new['status'] == 1): ?>0<?php else: ?>1<?php endif; ?>" attr-id="<?php echo ($new["news_id"]); ?>" class="sing_cursor singcms-on-off"
                                             id="singcms-on-off"><?php echo (getMenuStatus($new["status"])); ?></span></td>
                                         <td><span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true"
@@ -190,10 +191,10 @@
                             </div>
 
                         </form>
-                        <div class="input-group">
+                        <div class="input-group col-md-6">
                             <select class="form-control" name="position_id" id="select-push">
                                 <option value="0">请选择推荐位进行推送</option>
-                                <?php if(is_array($positions)): foreach($positions as $key=>$position): ?><opiton value="<?php echo ($position["id"]); ?>"><?php echo ($position["name"]); ?></opiton><?php endforeach; endif; ?>
+                                <?php if(is_array($positions)): foreach($positions as $key=>$position): ?><option value="<?php echo ($position["id"]); ?>"><?php echo ($position["name"]); ?></option><?php endforeach; endif; ?>
                             </select>
                             <button id="singcms-push" type="button" class="btn btn-primary">推送</button>
                         </div>

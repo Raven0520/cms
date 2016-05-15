@@ -88,6 +88,7 @@
                                             {$new.thumb|isThumb}
                                         </td>
                                         <td>{$new.create_time|date="Y-m-d H:i",###}</td>
+                                        <!--将status转化成文字-->
                                         <td><span attr-status="<if condition="$new['status'] eq 1">0<else/>1</if>" attr-id="{$new.news_id}" class="sing_cursor singcms-on-off"
                                             id="singcms-on-off">{$new.status|getMenuStatus}</span></td>
                                         <td><span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true"
@@ -116,11 +117,11 @@
                             </div>
 
                         </form>
-                        <div class="input-group">
+                        <div class="input-group col-md-6">
                             <select class="form-control" name="position_id" id="select-push">
                                 <option value="0">请选择推荐位进行推送</option>
                                 <foreach name="positions" item="position">
-                                    <opiton value="{$position.id}">{$position.name}</opiton>
+                                    <option value="{$position.id}">{$position.name}</option>
                                 </foreach>
                             </select>
                             <button id="singcms-push" type="button" class="btn btn-primary">推送</button>

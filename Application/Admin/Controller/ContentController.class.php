@@ -44,7 +44,7 @@ class ContentController extends CommonController
 
         $this->assign("pageres",$pageres);
         $this->assign("news",$news);
-        $this->assign('positons',$positions);
+        $this->assign("positions",$positions);
 
         $this->assign("webSiteMenu",D("Menu")->getBarMenus());
         $this->display();

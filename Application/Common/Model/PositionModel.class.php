@@ -24,6 +24,29 @@ class PositionModel extends Model
         if (!$data || !is_array($data)){
             return 0;
         }
-        return $this->_db->add($_POST);
+        $data['create_time'] = time();
+        return $this->_db->add($data);
     }
+
+    //获取推荐位信息
+    public function getPositions($data,$page,$pageSize = 10){
+
+        $data['status'] = array('neq' , -1);
+        $offset = ($page - 1) * $pageSize;
+        $list = $this->_db->where($data)->limit($offset,$pageSize)->select();
+        return $list;
+    }
+
+    public function getPositionsCount($data = array()){
+        $data['status'] = array('neq',-1);
+        return $this->_db->where($data)->count();
+    }
+
+    public function getNormalPositions(){
+        $condition = array('status' => 1);
+        $list = $this->_db->where($condition)->order('id')->select();
+        return $list;
+    }
+    
+    
 }
