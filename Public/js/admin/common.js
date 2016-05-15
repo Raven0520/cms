@@ -55,7 +55,7 @@ $('.singcms-table #singcms-delete').on('click',function(){
     layer.open({
         type:0,
         title:'是否提交',
-        btn:['yes','no'],
+        btn:['Yes','No'],
         icon:3,
         closeBtn:2,
         content:'是否确定' + message,
@@ -81,6 +81,7 @@ function todelete (url,data){
         ,"JSON");
 }
 
+//排序JS
 $('#button-listorder').click(function(){
     //获取 listorder内容
     var data = $("#singcms-listorder").serializeArray();

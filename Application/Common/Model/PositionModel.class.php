@@ -33,7 +33,7 @@ class PositionModel extends Model
 
         $data['status'] = array('neq' , -1);
         $offset = ($page - 1) * $pageSize;
-        $list = $this->_db->where($data)->limit($offset,$pageSize)->select();
+        $list = $this->_db->where($data)->order('id')->limit($offset,$pageSize)->select();
         return $list;
     }
 
@@ -64,6 +64,16 @@ class PositionModel extends Model
     public function find($id){
         $data = $this->_db->where('id='.$id)->find();
         return $data;
+    }
+    //保存更新后的推荐位数据
+    public function updatePositionsById($id,$data){
+        if (!$id || !is_numeric($id)){
+            throw_exception('ID不合法');
+        }
+        if (!$data || !is_array($data)){
+            throw_exception('数据不合法');
+        }
+        return $this->_db->where('id='.$id)->save($data);
     }
     
 }

@@ -7,11 +7,14 @@
  */
 
 namespace Admin\Controller;
+
 use Think\Controller;
+use Think\Exception;
 
 class PositionController extends CommonController
 {
-    public function index(){
+    public function index()
+    {
 
         $data = array();
         if (isset($_REQUEST['status']) && in_array($_REQUEST['status'], array(1, 0))) {
@@ -28,7 +31,6 @@ class PositionController extends CommonController
         $pageSize = 3;
         $Positions = D("Position")->getPositions($data, $page, $pageSize);
         $PositionsCount = D("Position")->getPositionsCount($data);
-
         $res = new \Think\Page($PositionsCount, $pageSize);
         $pageRes = $res->show();
         $this->assign('pageRes', $pageRes);
@@ -37,11 +39,16 @@ class PositionController extends CommonController
         $this->display();
     }
 
-    public function add(){
+    public function add()
+    {
         //判断是否有提交数据
-        if($_POST && is_array($_POST)) {
+        if ($_POST) {
             if (!isset($_POST['name']) || !$_POST['name']) {
                 return show(0, '推荐位名称不能为空');
+            }
+            //判断是否为更新操作
+            if ($_POST['id']) {
+                return $this->save($_POST);
             }
             //执行新增操作
             $positionId = D("Position")->insert($_POST);
@@ -55,43 +62,62 @@ class PositionController extends CommonController
     }
 
     //改变推荐位状态
-    public function setStatus(){
-        try{
-            if($_POST){
+    public function setStatus()
+    {
+        try {
+            if ($_POST) {
                 $id = $_POST['id'];
                 $status = $_POST['status'];
 
-                if(!$id){
-                    return show(0,'ID不存在');
+                if (!$id) {
+                    return show(0, 'ID不存在');
                 }
 
-                $res = D("Position")->updateStatusById($id,$status);
+                $res = D("Position")->updateStatusById($id, $status);
 
-                if($res){
-                    return show(1,'操作成功');
-                }else{
-                    return show(0,'操作失败');
+                if ($res) {
+                    return show(1, '操作成功');
+                } else {
+                    return show(0, '操作失败');
                 }
             }
-            return show(0,'没有提交内容');
-        }catch(Exception $e){
-            return show(0,$e->getMessage());
+            return show(0, '没有提交内容');
+        } catch (Exception $e) {
+            return show(0, $e->getMessage());
         }
     }
 
     //获取推荐位编辑器内容
-    public function edit(){
+    public function edit()
+    {
         $positionId = $_GET['id'];
-        if (!$positionId){
+        if (!$positionId) {
             $this->redirect('/admin.php?c=position');
         }
         $positions = D("Position")->find($positionId);
-        if (!$positions){
+        if (!$positions) {
             $this->redirect('/admin.php?c=position');
         }
-        
-        $this->assign('positions',$positions);
+
+        $this->assign('position', $positions);
 
         $this->display();
+    }
+
+    //保存推荐位修改内容
+    public function save($data)
+    {
+        $positionId = $data['id'];
+        unset($data['id']);
+
+        try {
+            $id = D("Position")->updatePositionsById($positionId, $data);
+            if (!$id) {
+                return show(0, '更新失败');
+            }
+            return show(1, '更新成功');
+        } catch (Exception $e) {
+            return show(0, $e->getMessage());
+        }
     }
 }
