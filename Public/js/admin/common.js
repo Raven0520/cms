@@ -125,3 +125,35 @@ $(".singcms-table #singcms-on-off").on('click',function(){
         }
     },"JSON");
 });
+
+//推送JS相关
+$("#singcms-push").click(function(){
+    var id = $("#select-push").val();
+    if(id === 0){
+        return dialog.error("请选择推荐位");
+    }
+    push = {};
+    postData = {};
+
+    //获取被选中的文章
+    $("input[name='pushcheck']:checked").each(function(i){
+        push[i] = $(this).val();
+    });
+
+    postData['push'] = push;
+    postData['position_id'] = id;
+
+    //测试获取的数据
+    // console.log(postData);return;
+    var url = SCOPE.push_url;
+    $.post(url,postData,function(result){
+        if(result.status == 1){
+            //TODO
+            return dialog.success(result.message,result['data']['jump_url']);
+        }
+        if(result.status === 0){
+            //TODO
+            return dialog.error(result.message);
+        }
+    },"JSON");
+});

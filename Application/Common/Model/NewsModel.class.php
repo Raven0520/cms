@@ -102,4 +102,15 @@ class NewsModel extends Model
         $data = array('listorder'=> intval($listorder));
         return $this->_db->where('news_id='.$id)->save($data);
     }
+
+    //文章推荐位内容查询
+    public function getNewsByNewsIdIn($newsIds){
+        if (!is_array($newsIds)){
+            throw_exception('参数不合法');
+        }
+        $data = array(
+            "news_id" => array(',',implode($newsIds)),
+        );
+        return $this->_db->where($data)-select();
+    }
 }

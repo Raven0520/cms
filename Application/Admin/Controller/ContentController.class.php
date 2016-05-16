@@ -194,6 +194,40 @@ class ContentController extends CommonController
         }
         return show(0,'排序文章失败',array('jump_url'=>$jumpUrl));
     }
+    //文章管理  推荐位功能
+    public function push(){
+        $jumpUrl = $_SERVER['HTTP_REFERER'];
+        $positionId = $_POST['position_id'];
+        $newsId = $_POST['push'];
+
+            if (!$newsId || !is_numeric($newsId)){
+                return show (0,'没有选择文章');
+            }
+            if (!$positionId){
+                return show(0,'没有选择推荐位');
+            }
+        try{
+            $news = D("News")->getNewsByNewsIdIn($newsId);
+            if (!$news){
+                return show(0,'没有相关内容');
+            }
+
+            foreach ($news as $new){
+                $data = array(
+                    'position_id' => $positionId,
+                    'title' => $new['title'],
+                    'thumb' => $new['thumb'],
+                    'news_id' => $new['news_id'],
+                    'status' =>1,
+                    'create_time' => $new['create_time'],
+                );
+                $position = D("PositionContent")->insert($data);
+            }
+        }catch (Exception $e){
+            return show(0,$e->getMessage());
+        }
+        return show(1,'推荐成功',array('jump_url' => $jumpUrl));
+    }
 }
 
 ?>
