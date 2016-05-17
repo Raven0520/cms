@@ -37,8 +37,9 @@
 						<label for="inputname" class="col-sm-2 control-label">选择推荐位:</label>
 						<div class="col-sm-5">
 							<select class="form-control" name="position_id">
-
-									<option value=""></option>
+								<foreach name="positions" item="position">
+									<option value="{$position.id}">{$position.name}</option>
+								</foreach>
 							</select>
 						</div>
 					</div>
