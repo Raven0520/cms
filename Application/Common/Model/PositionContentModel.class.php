@@ -22,6 +22,9 @@ class PositionContentModel extends Model
         if (!$data || !is_array($data)){
             return 0;
         }
+        if (!$data['news_id']){
+            $data['create_time'] = time();
+        }
         return $this->_db->add($data);
     }
 
@@ -37,5 +40,40 @@ class PositionContentModel extends Model
         $list = $this->_db->select();
 
         return $list;
+    }
+
+    //提取编辑框内容
+    public function find($id){
+        $data = $this->_db->where('id='.$id)->find();
+        return $data;
+    }
+    //更新数据
+    public function updateById($id,$data){
+        if (!$id || !is_numeric($id)){
+            throw_exception('ID不合法');
+        }
+        if (!$data || !is_array($data)){
+            throw_exception('数据不合法');
+        }
+        return $this->_db->where('id='.$id)->save($data);
+    }
+    public function updateStatusById($id,$status){
+        if(!is_numeric($status)){
+            throw_exception('status不能为非数字');
+        }
+        if(!$id || !is_numeric($id)){
+            throw_exception('ID不合法');
+        }
+        $data['status'] = $status;
+
+        return $this->_db->where("id=".$id)->save($data);
+    }
+    //排序的方法
+    public function updateListorderById($id,$listorder){
+        if (!$id || !is_numeric($id)){
+            throw_exception('ID不合法');
+        }
+        $data = array('listorder' => intval($listorder));
+        return $this->_db->where("id=".$id)->save($data);
     }
 }

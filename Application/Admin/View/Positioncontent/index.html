@@ -53,6 +53,7 @@
             <div class="col-lg-6">
                 <h3></h3>
                 <div class="table-responsive">
+                    <!--排序的标识-->
                     <form id="singcms-listorder">
                     <table class="table table-bordered table-hover singcms-table">
                         <thead>
@@ -69,7 +70,7 @@
                         <tbody>
                             <volist name="contents" id="content">
                             <tr>
-                                <td><input size=4 type='text'  name='' value=""/></td>
+                                <td><input size=4 type='text'  name="listorder[{$content.id}]" value="{$content.listorder}"/></td>
                                 <td>{$content.id}</td>
                                 <td>{$content.title}</td>
                                 <td>{$content.create_time|date="Y-m-d H:i",###}</td>

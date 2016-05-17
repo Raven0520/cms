@@ -48,10 +48,15 @@ class PositioncontentController extends CommonController
                     $res = D("News")->find($_POST['news_id']);
                     if ($res && is_array($res)){
                         $_POST['thumb'] = $res['thumb'];
+                        $_POST['create_time'] = $res['create_time'];
                     }
                 }else{
                     return show(0,'图片不能为空');
                 }
+            }
+            //判断是否为更新操作
+            if ($_POST['id']){
+                return $this->save($_POST);
             }
             //插入数据库
             try{
@@ -70,5 +75,51 @@ class PositioncontentController extends CommonController
             $this->assign('positions', $positions);
         }
         $this->display();
+    }
+
+    //推荐位内容修改功能
+    public function edit(){
+
+        $id = $_GET['id'];
+        if (!$id){
+            $this->redirect('/admin.php?c=positioncontent');
+        }
+        $position = D("PositionContent")->find($id);
+        if (!$position){
+            $this->redirect(('/admin.php?c=positioncontent'));
+        }
+        $positions = D("Position")->getNormalPositions();
+
+        $this->assign('positions',$positions);
+        $this->assign('vo',$position);
+        $this->display();
+    }
+    //更新推荐位内容数据
+    public function save($data){
+        $id = $data['id'];
+        unset($data['id']);
+
+        try{
+            $res = D("PositionContent")->updateById($id,$data);
+            if ($res){
+                return show(1,'更新成功');
+            }
+            return show(0,'更新失败');
+        }catch (Exception $e){
+            return show(0,$e->getMessage());
+        }
+    }
+    //改变推荐位状态
+    public function setStatus(){
+        $data = array(
+            'id' => intval($_POST['id']),
+            'status' => intval($_POST['status']),
+        );
+        return parent::setStatus($data,'PositionContent');
+    }
+    //调用父类方法排序
+    public function listorder($model = 'PositionContent')
+    {
+        return parent::listorder($model);
     }
 }

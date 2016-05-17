@@ -94,7 +94,7 @@ class NewsModel extends Model
     }
 
     //文章管理页面更新排序功能
-    public function updateNewsListorderById($id,$listorder){
+    public function updateListorderById($id,$listorder){
         if(!$id || !is_numeric($id)){
             throw_exception('ID不合法');
         }

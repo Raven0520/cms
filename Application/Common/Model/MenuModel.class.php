@@ -69,7 +69,7 @@ class MenuModel extends Model
     }
 
     //后台菜单目录排序功能
-    public function updateMenuListorderById($id,$listorder){
+    public function updateListorderById($id,$listorder){
         if(!$id || !is_numeric($id)){
             throw_exception('ID不合法');
         }

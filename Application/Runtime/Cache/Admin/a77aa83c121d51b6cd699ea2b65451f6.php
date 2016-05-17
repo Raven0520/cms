@@ -152,8 +152,8 @@
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-2 control-label">状态:</label>
                             <div class="col-sm-5">
-                                <input type="radio" name="status" id="optionsRadiosInline1" value="1" <?php if($menu["status"] == 1): ?>checked<?php endif; ?>> 开启
-                                <input type="radio" name="status" id="optionsRadiosInline2" value="0" <?php if($menu["status"] == 0): ?>checked<?php endif; ?>> 关闭
+                                <input type="radio" name="status" id="optionsRadiosInline1" value="1" <?php if($menu["status"] == 1): ?>checked = "checked"<?php endif; ?>> 开启
+                                <input type="radio" name="status" id="optionsRadiosInline2" value="0" <?php if($menu["status"] == 0): ?>checked = "checked"<?php endif; ?>> 关闭
                             </div>
 
                         </div>

@@ -149,55 +149,19 @@ class ContentController extends CommonController
     }
 
     public function setStatus(){
-        try{
-            if($_POST){
-                $id = $_POST['id'];
-                $status = $_POST['status'];
-
-                if(!$id){
-                    return show(0,'ID不存在');
-                }
-
-                $res = D("News")->updateStatusById($id,$status);
-
-                if($res){
-                    return show(1,'操作成功');
-                }else{
-                    return show(0,'操作失败');
-                }
-            }
-            return show(0,'没有提交内容');
-        }catch(Exception $e){
-            return show(0,$e->getMessage());
-        }
+        $data = array(
+            'id' => intval($_POST['id']),
+            'status' => intval($_POST['status']),
+        );
+        return parent::setStatus($data,'News');
     }
 
-    //文章管理页面排序功能
-    public function listorder(){
-        $listorder = $_POST['listorder'];
-        $jumpUrl = $_SERVER['HTTP_REFERER'];
-        $errors = array();
-
-        try{
-            if($listorder){
-                //执行文章排序操作
-                foreach ($listorder as $newsId => $v){
-                    $id = D("News")->updateNewsListorderById($newsId,$v);
-
-                    if ($id === false){
-                        $errors[] = $newsId;
-                    }
-                }
-                if ($errors){
-                    return show(0,'排序失败-'.implode(',',$errors),array('jump_url'=>$jumpUrl));
-                }
-                return show(1,'排序成功',array('jump_url'=>$jumpUrl));
-            }
-        }catch (Exception $e){
-            return show(0,$e->getMessage());
-        }
-        return show(0,'排序文章失败',array('jump_url'=>$jumpUrl));
+    //页面排序功能
+    public function listorder($model = 'News')
+    {
+        return parent::listorder($model);
     }
+
     //文章管理  推荐位功能
     public function push(){
         $jumpUrl = $_SERVER['HTTP_REFERER'];

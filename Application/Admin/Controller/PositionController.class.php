@@ -62,29 +62,13 @@ class PositionController extends CommonController
     }
 
     //改变推荐位状态
-    public function setStatus()
-    {
-        try {
-            if ($_POST) {
-                $id = $_POST['id'];
-                $status = $_POST['status'];
-
-                if (!$id) {
-                    return show(0, 'ID不存在');
-                }
-
-                $res = D("Position")->updateStatusById($id, $status);
-
-                if ($res) {
-                    return show(1, '操作成功');
-                } else {
-                    return show(0, '操作失败');
-                }
-            }
-            return show(0, '没有提交内容');
-        } catch (Exception $e) {
-            return show(0, $e->getMessage());
-        }
+    //改变推荐位状态
+    public function setStatus(){
+        $data = array(
+            'id' => intval($_POST['id']),
+            'status' => intval($_POST['status']),
+        );
+        return parent::setStatus($data,'Position');
     }
 
     //获取推荐位编辑器内容
