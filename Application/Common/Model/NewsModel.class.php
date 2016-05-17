@@ -109,8 +109,8 @@ class NewsModel extends Model
             throw_exception('参数不合法');
         }
         $data = array(
-            "news_id" => array(',',implode($newsIds)),
+            'news_id' => array('in',implode(',',$newsIds)),
         );
-        return $this->_db->where($data)-select();
+        return $this->_db->where($data)->select();
     }
 }

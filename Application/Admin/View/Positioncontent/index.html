@@ -30,7 +30,9 @@
                     <div class="input-group">
                         <span class="input-group-addon">推荐位</span>
                         <select class="form-control" name="position_id">
-                                <option value=""></option>
+                            <foreach name="positions" item="position">
+                                <option value="{$position.id}" <if condition="$position['id'] eq $position_id">selected = "selected"</if>>{$position.name}</option>
+                            </foreach>
                         </select>
                     </div>
                 </div>
@@ -38,7 +40,7 @@
                 <input type="hidden" name="a" value="index"/>
                 <div class="col-md-3">
                     <div class="input-group">
-                        <input class="form-control" name="title" type="text" value="" placeholder="文章标题" />
+                        <input class="form-control" name="title" type="text" value="{$title}" placeholder="文章标题" />
                 <span class="input-group-btn">
                   <button id="sub_data" type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
                 </span>
@@ -65,23 +67,25 @@
                         </tr>
                         </thead>
                         <tbody>
+                            <volist name="contents" id="content">
                             <tr>
                                 <td><input size=4 type='text'  name='' value=""/></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>{$content.id}</td>
+                                <td>{$content.title}</td>
+                                <td>{$content.create_time|date="Y-m-d H:i",###}</td>
+                                <td>{$content.thumb|isThumb}</td>
                                 <td>
-                                    <span  attr-status="0"  attr-id="" class="sing_cursor singcms-on-off" id="singcms-on-off" ></span>
+                                    <!--将status转化成文字-->
+                                    <span  attr-status="<if condition="$content['status'] eq 1">0<else/>1</if>"  attr-id="{$content.id}" class="sing_cursor singcms-on-off" id="singcms-on-off" >{$content.status|getMenuStatus}</span>
                                 </td>
                                 <td>
-                                    <span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="" ></span>
-                                    <a href="javascript:void(0)" id="singcms-delete"  attr-id=""  attr-message="删除">
+                                    <span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="{$content.id}" ></span>
+                                    <a href="javascript:void(0)" id="singcms-delete"  attr-id="{$content.id}"  attr-message="删除">
                                         <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
                                     </a>
                                 </td>
                             </tr>
-
+                            </volist>
                         </tbody>
                     </table>
                     </from>

@@ -24,11 +24,15 @@ class ContentController extends CommonController
     {
         $conds = array();
         $title = $_GET['title'];
+        $cid = intval($_GET['catid']);
+
+        $this->assign('title',$title);
+        $this->assign('catid',$cid);
         if($title){
             $conds['title'] = $title;
         }
-        if($_GET['catid']){
-            $conds['catid'] = intval($_GET['catid']);
+        if($cid){
+            $conds['catid'] = $cid;
         }
 
         $page = $_REQUEST['p'] ? $_REQUEST['p'] : 1;
@@ -200,7 +204,7 @@ class ContentController extends CommonController
         $positionId = $_POST['position_id'];
         $newsId = $_POST['push'];
 
-            if (!$newsId || !is_numeric($newsId)){
+            if (!$newsId || !is_array($newsId)){
                 return show (0,'没有选择文章');
             }
             if (!$positionId){

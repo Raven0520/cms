@@ -148,11 +148,11 @@ $("#singcms-push").click(function(){
     var url = SCOPE.push_url;
     $.post(url,postData,function(result){
         if(result.status == 1){
-            //TODO
+            //成功
             return dialog.success(result.message,result['data']['jump_url']);
         }
         if(result.status === 0){
-            //TODO
+            //失败
             return dialog.error(result.message);
         }
     },"JSON");

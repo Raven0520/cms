@@ -112,8 +112,8 @@
                         <div class="input-group">
                             <span class="input-group-addon">栏目</span>
                             <select class="form-control" name="catid">
-                                <option value=''>全部分类</option>
-                                <?php if(is_array($webSiteMenu)): foreach($webSiteMenu as $key=>$sitenav): ?><option value="<?php echo ($sitenav["menu_id"]); ?>"><?php echo ($sitenav["name"]); ?></option><?php endforeach; endif; ?>
+                                <option value='0'>全部分类</option>
+                                <?php if(is_array($webSiteMenu)): foreach($webSiteMenu as $key=>$sitenav): ?><option value="<?php echo ($sitenav["menu_id"]); ?>"<?php if($sitenav['menu_id'] == $catid): ?>selected = "selected"<?php endif; ?>><?php echo ($sitenav["name"]); ?></option><?php endforeach; endif; ?>
                             </select>
                         </div>
                     </div>
@@ -122,7 +122,7 @@
                     <div class="col-md-3">
                         <div class="input-group">
                             <span class="input-group-addon">标题</span>
-                            <input class="form-control" name="title" type="text" value="" placeholder="文章标题"/>
+                            <input class="form-control" name="title" type="text" value="<?php echo ($title); ?>" placeholder="文章标题"/>
                 <span class="input-group-btn">
                   <button id="sub_data" type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>
                   </button>
