@@ -113,4 +113,33 @@ class NewsModel extends Model
         );
         return $this->_db->where($data)->select();
     }
+    //查询文章
+    public function select($data,$limit=0){
+        if ($data['title']){
+            $data['title'] = array('like','%'.$data['title'].'%');
+        }
+        $this->_db->where($data)->order('listorder desc,news_id desc');
+        if ($limit){
+            $this->_db->limit($limit);
+        }
+        $list = $this->_db->select();
+
+        return $list;
+    }
+    //获取排行的数据
+    public function getRank($data=array(),$limit =100){
+        $list = $this->_db->where($data)->order('count desc,news_id desc')->limit($limit)->select();
+        return $list;
+    }
+    //更新文章阅读数
+    public function updateCount($id,$count){
+        if (!is_numeric($id) || !$id){
+            throw_exception('ID不合法');
+        }
+        if (!is_numeric($count)){
+            throw_exception('count不能为非数字');
+        }
+        $data['count'] = $count;
+        return $this->_db->where("news_id=".$id)->save($data);
+    }
 }

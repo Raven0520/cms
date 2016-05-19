@@ -1,0 +1,67 @@
+<include file="Index/header" />
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-9">
+        <!--<div class="banner">-->
+          <!--<div class="banner-left">-->
+            <!--<a target="_blank" href="/index.php?c=detail&id={$result[topPicNews][0]['news_id']}"><img width="670" height="360" src="{$result['topPicNews'][0]['thumb']}" alt=""></a>-->
+          <!--</div>-->
+          <!--<div class="banner-right">-->
+            <!--<ul>-->
+              <!--<volist name="result['listNews']" id="vo">-->
+              <!--<li>-->
+                <!--<a target="_blank" href="/index.php?c=detail&id={$vo.news_id}"><img width="150" height="113" src="{$vo.thumb}" alt="{$vo.title}"></a>-->
+              <!--</li>-->
+              <!--</volist>-->
+            <!--</ul>-->
+          <!--</div>-->
+        <!--</div>-->
+        <div class="news-detail">
+            <h1>{$news.title}</h1>
+            <div class="news-info">
+                <h5>{$news.description}</h5>
+            </div>
+            <div class="img-thumbnail">
+                <img width="670" height="360" src="{$news.thumb}" alt="{$news.title}" />
+            </div>
+
+            <div class="news-intro">
+                <h4>{$news.small_title}</h4>
+            </div>
+            <div class="news-detail">
+                {$news.content}
+            </div>
+            <div>
+                <div class="news-info">
+                    {$news.keywords}<span>{$news.create_time|date = "Y-m-d H:i",### }</span>浏览量({$news.count})
+                </div>
+            </div>
+
+          <!--<volist name="result['news']" id="vo">-->
+          <!--<dl>-->
+            <!--<dt><a target="_blank" href="/index.php?c=detail&id={$vo.news_id}">{$vo.title}</a></dt>-->
+            <!--<dd class="news-img">-->
+              <!--<a target="_blank" href="/index.php?c=detail&id={$vo.news_id}"><img width="192" height="108" src="{$vo.thumb}" alt="{$vo.title}"></a>-->
+            <!--</dd>-->
+            <!--<dd class="news-intro">-->
+              <!--{$vo.content}-->
+            <!--</dd>-->
+            <!--<dd class="news-info">-->
+              <!--{$vo.keywords} <span>{$vo.create_time|date="Y-m-d H:i",###}</span> 阅读({$vo.count})-->
+            <!--</dd>-->
+          <!--</dl>-->
+          <!--</volist>-->
+          <!--<ul class="pagination">-->
+            <!--{$result['pageres']}-->
+          <!--</ul>-->
+        </div>
+      </div>
+      <!--网页右侧排行-->
+      <include file="Index/right" />
+    </div>
+  </div>
+</section>
+</body>
+</html>
