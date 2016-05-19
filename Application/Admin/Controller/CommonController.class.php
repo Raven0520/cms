@@ -41,6 +41,7 @@ class CommonController extends Controller {
 		$user = $this->getLoginUser();
 		if($user && is_array($user)) {
 			return true;
+
 		}
 
 		return false;
