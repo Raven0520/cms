@@ -31,24 +31,24 @@
 					<div class="form-group">
 						<label  class="col-sm-2 control-label">用户名:</label>
 						<div class="col-sm-5">
-							
+							{$vo.username}
 						</div>
 					</div>
 
 					<div class="form-group">
 						<label  class="col-sm-2 control-label">真实姓名:</label>
 						<div class="col-sm-5">
-							<input type="text" class="form-control" name="realname" id="inputPassword3" placeholder="" value="">
+							<input type="text" class="form-control" name="realname" id="inputPassword3" placeholder="" value="{$vo.realname}">
 						</div>
 					</div>
 
 					<div class="form-group">
 						<label  class="col-sm-2 control-label">个人邮箱:</label>
 						<div class="col-sm-5">
-							<input type="text" class="form-control" name="email" id="inputPassword3" placeholder="" value="">
+							<input type="text" class="form-control" name="email" id="inputPassword3" placeholder="" value="{$vo.email}">
 						</div>
 					</div>
-					<input type="hidden" name="admin_id" value=""/>
+					<input type="hidden" name="admin_id" value="{$vo.admin_id}"/>
 
 
 					<div class="form-group">

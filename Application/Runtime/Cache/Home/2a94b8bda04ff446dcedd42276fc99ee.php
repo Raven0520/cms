@@ -14,7 +14,7 @@
     <div class="navbar-inverse">
         <div class="container">
             <div class="navbar-header">
-                <a href="">
+                <a href="/">
                     <img src="Public/images/logo.png" alt="">
                 </a>
             </div>
@@ -32,7 +32,8 @@
       <div class="col-sm-9 col-md-9">
         <div class="banner">
           <div class="banner-left">
-            <a target="_blank" href="/index.php?c=detail&id=<?php echo ($result[topPicNews][0]['news_id']); ?>"><img width="670" height="360" src="<?php echo ($result['topPicNews'][0]['thumb']); ?>" alt=""></a>
+            <div class="banner-info"><span>阅读数</span><i class="news_count node-<?php echo ($result['topPicNews'][0]['news_id']); ?>" news-id="<?php echo ($result['topPicNews'][0]['news_id']); ?>"><?php echo ($result['topPicNews'][0]['count']); ?></i></div>
+            <a target="_blank" href="/index.php?c=detail&id=<?php echo ($result['topPicNews'][0]['news_id']); ?>"><img width="670" height="360" src="<?php echo ($result['topPicNews'][0]['thumb']); ?>" alt="<?php echo ($result['topPicNews'][0]['title']); ?>"></a>
           </div>
           <div class="banner-right">
             <ul>
@@ -52,7 +53,7 @@
               <?php echo ($vo["description"]); ?>
             </dd>
             <dd class="news-info">
-              <?php echo ($vo["keywords"]); ?> <span><?php echo (date("Y-m-d H:i",$vo["create_time"])); ?></span> 阅读(0)
+              <?php echo ($vo["keywords"]); ?> <span><?php echo (date("Y-m-d H:i",$vo["create_time"])); ?></span> 阅读(<i news-id="<?php echo ($vo["news_id"]); ?>" class="news_count node-<?php echo ($vo["news_id"]); ?>"><?php echo ($vo["count"]); ?></i>&nbsp;)
             </dd>
           </dl><?php endforeach; endif; else: echo "" ;endif; ?>
         </div>
@@ -85,4 +86,6 @@
   </div>
 </section>
 </body>
+<script src="/Public/js/jquery.js"></script>
+<script src="/Public/js/count.js"></script>
 </html>

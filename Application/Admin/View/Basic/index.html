@@ -8,11 +8,7 @@
 	<div class="container-fluid">
 
 		<!-- Page Heading -->
-		<div class="row">
-		<div class="col-lg-12">
-			<a href="/admin.php?c=basic"><button type="button" class="btn btn-primary"> 基本配置</button></a>
-		</div>
-		</div>
+		<include file="Basic/button"/>
 		<!-- /.row -->
 
 		<div class="row">
@@ -40,11 +36,29 @@
 					</div>
 
 					<div class="form-group">
+						<label for="inputPassword3" class="col-sm-2 control-label">是否自动备份数据库:</label>
+						<div class="col-sm-5">
+							<input type="radio" name="dumpmysql" id="optionsRadiosInline1" value="1" <if condition="$vo['dumpmysql'] eq 1">checked</if>> 是
+                            <input type="radio" name="dumpmysql" id="optionsRadiosInline2" value="0" <if condition="$vo['dumpmysql'] eq 0">checked</if>> 否
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputPassword3" class="col-sm-2 control-label">是否自动生成首页缓存:</label>
+						<div class="col-sm-5">
+							<input type="radio" name="cacheindex" id="optionsRadiosInline1" value="1" <if condition="$vo['cacheindex'] eq 1">checked</if>> 是
+                            <input type="radio" name="cacheindex" id="optionsRadiosInline2" value="0" <if condition="$vo['cacheindex'] eq 0">checked</if>> 否
+						</div>
+					</div>
+
+
+					<div class="form-group">
 						<div class="col-sm-offset-2 col-sm-10">
 							<button type="button" class="btn btn-default" id="singcms-button-submit">提交</button>
 						</div>
 					</div>
 				</form>
+
 
 			</div>
 
@@ -59,6 +73,7 @@
 
 </div>
 <!-- /#wrapper -->
+<script type="text/javascript" src="/Public/js/admin/form.js"></script>
 <script>
 	var SCOPE = {
 		'save_url' : '/admin.php?c=basic&a=add',

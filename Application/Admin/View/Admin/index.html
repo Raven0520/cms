@@ -46,14 +46,14 @@
                         </tr>
                         </thead>
                         <tbody>
+                        <volist name="admins" id="admin">
                             <tr>
-                                
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><span  attr-status=""  attr-id="" class="sing_cursor singcms-on-off" id="singcms-on-off" ></span></td>
-                                <td>    <a href="javascript:void(0)" attr-id="" id="singcms-delete"  attr-a="admin" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a></td>
+                                <td>{$admin.admin_id}</td>
+                                <td>{$admin.username}</td>
+                                <td>{$admin.realname}</td>
+                                <td>{$admin.lastlogintime|date="Y-m-d H:i",###}</td>
+                                <td><span  attr-status="<if condition="$admin['status'] eq 1">0<else/>1</if>"  attr-id="{$admin.admin_id}" class="sing_cursor singcms-on-off" id="singcms-on-off" >{$admin.status|getMenuStatus}</span></td>
+                                <td>    <a href="javascript:void(0)" attr-id="{$admin.admin_id}" id="singcms-delete"  attr-a="admin" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a></td>
                             </tr>
                         </volist>
 
