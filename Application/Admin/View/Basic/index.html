@@ -18,16 +18,14 @@
 					<div class="form-group">
 						<label for="inputname" class="col-sm-2 control-label">站点标题:</label>
 						<div class="col-sm-5">
-							<input type="text" name="title" value="{$vo.title}" class="form-control" id="inputname"
-								   placeholder="请填写站点标题">
+							<input type="text" name="title" value="{$vo.title}" class="form-control" id="inputname" placeholder="请填写站点标题">
 						</div>
 					</div>
 
 					<div class="form-group">
 						<label for="inputPassword3" class="col-sm-2 control-label">站点关键词:</label>
 						<div class="col-sm-5">
-							<input type="text" class="form-control" value="{$vo.keywords}" name="keywords"
-								   id="inputPassword3" placeholder="请填写站点关键词">
+							<input type="text" class="form-control" value="{$vo.keywords}" name="keywords" id="inputPassword3" placeholder="请填写站点关键词">
 						</div>
 					</div>
 					<div class="form-group">
@@ -40,24 +38,16 @@
 					<div class="form-group">
 						<label for="inputPassword3" class="col-sm-2 control-label">是否自动备份数据库:</label>
 						<div class="col-sm-5">
-							<input type="radio" name="dumpmysql" id="optionsRadiosInline1" value="1"
-							<if condition="$vo['dumpmysql'] eq 1">checked</if>
-							> 是
-							<input type="radio" name="dumpmysql" id="optionsRadiosInline2" value="0"
-							<if condition="$vo['dumpmysql'] eq 0">checked</if>
-							> 否
+							<input type="radio" name="dumpmysql" id="optionsRadiosInline1" value="1" <if condition="$vo['dumpmysql'] eq 1">checked</if>> 是
+                            <input type="radio" name="dumpmysql" id="optionsRadiosInline2" value="0" <if condition="$vo['dumpmysql'] eq 0">checked</if>> 否
 						</div>
 					</div>
 
 					<div class="form-group">
 						<label for="inputPassword3" class="col-sm-2 control-label">是否自动生成首页缓存:</label>
 						<div class="col-sm-5">
-							<input type="radio" name="cacheindex" id="optionsRadiosInline1" value="1"
-							<if condition="$vo['cacheindex'] eq 1">checked</if>
-							> 是
-							<input type="radio" name="cacheindex" id="optionsRadiosInline2" value="0"
-							<if condition="$vo['cacheindex'] eq 0">checked</if>
-							> 否
+							<input type="radio" name="cacheindex" id="optionsRadiosInline1" value="1" <if condition="$vo['cacheindex'] eq 1">checked</if>> 是
+                            <input type="radio" name="cacheindex" id="optionsRadiosInline2" value="0" <if condition="$vo['cacheindex'] eq 0">checked</if>> 否
 						</div>
 					</div>
 

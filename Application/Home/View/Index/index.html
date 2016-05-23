@@ -1,164 +1,19 @@
-<include file="Index/header"/>
-<!--尝试让首页图片轮播-->
-<style type="text/css">
-    *{ margin:0; padding:0; text-decoration:none;}
-    body{ padding:20px;}
-    #container {width:670px; height:360px; border:3px solid #333; overflow:hidden; position:relative;}
-    #list { width:4690px; height:360px; position:absolute; z-index:1;}
-    #list img { float:left;}
-    #buttons { position:absolute; height:10px; width:100px; z-index:2; bottom:20px; left:300px;}
-    #buttons span { cursor:pointer; float:left; border:1px solid #fff; width:10px; height:10px; border-radius:50%; background: #333; margin-right: 5px;}
-    #buttons .on {  background: orangered;}
-        .arrow { cursor: pointer; display: none; line-height: 39px; text-align: center; font-size: 36px; font-weight: bold; width: 40px; height: 40px;  position: absolute; z-index: 2; top: 160px; background-color: RGBA(0,0,0,.3); color: #fff;}
-        .arrow:hover { background-color: RGBA(0,0,0,.7);}
-        #container:hover .arrow { display: block;}
-        #prev { left: 20px;}
-        #next { right: 20px;}
-</style>
-<script type="text/javascript">
-    window.onload = function(){
-        var container = document.getElementById('container');
-        var list = document.getElementById('list');
-        var buttons = document.getElementById('buttons').getElementsByTagName('span');
-        var prev = document.getElementById('prev');
-        var next = document.getElementById('next');
-        var index = 1;
-        var animated = false;
-        var timer;
-        
-        function showButton(){
-            for(var i=0; i < buttons.length; i++){
-                if(buttons[i].className == 'on'){
-                    buttons[i].className = '';
-                    break;
-                }
-            }
-            buttons[index -1].className = 'on';
-        }
-        
-        function animate(offset){
-            animated = true;
-            
-            var newLeft = parseInt(list.style.left) + offset;
-            var time = 300; //位移总的时间
-            var interval = 2; //位移间隔时间
-            var speed = offset/(time/interval);//每次位移的量
-            
-            function go(){
-                if ((speed < 0 && parseInt(list.style.left) > newLeft) || (speed > 0 && parseInt(list.style.left) < newLeft)){
-                    list.style.left = parseInt(list.style.left) + speed + 'px';
-                    setTimeout(go,interval);
-                }
-                else{
-                    list.style.left = newLeft + 'px';
-            
-                    if ( newLeft > -670){
-                        list.style.left = -3350 + 'px';
-                    }
-                    if ( newLeft < -3350){
-                        list.style.left = -670 + 'px';
-                    }
-                    
-                    animated = false;
-                }
-            }
-            go();
-        }
-        
-        function play(){
-            timer = setInterval(function(){
-                next.onclick();
-            },3000);
-        }
-        
-        function stop(){
-            clearInterval (timer);
-        }
-        
-        next.onclick = function (){
-            if(animated == false){
-            if(index == 5){
-                index = 1;
-            }else{
-                index += 1;
-            }
-        }
-            
-            showButton();
-            if (animated == false){
-                animate(-670);
-            }
-        }
-        prev.onclick = function (){
-            if(animated == false){
-            if(index == 1){
-                index = 5;
-            }else{
-                index -= 1;
-            }
-        }
-            
-            showButton();
-            if (animated == false){
-                animate(670);
-            }
-        }
-        for( var i = 0; i < buttons.length ; i++){
-            buttons[i].onclick = function(){
-                if(this.className == 'on'){
-                    return;
-                }
-                var myIndex = parseInt(this.getAttribute('index'));
-                var offset = -670 * (myIndex - index);
-                if(animated == false){
-                    animate(offset);
-                    index = myIndex;
-                    showButton();
-                }
-            }
-        }
-        container.onmouseover = stop;
-        container.onmouseout = play;
-        
-        play();
-    }
-</script>
+<include file="Index/header" />
+
 <section>
   <div class="container">
     <div class="row">
       <div class="col-sm-9 col-md-9">
         <div class="banner">
           <div class="banner-left">
-            <div id="container">
-            <!--<div class="banner-info"><span>阅读数</span><i class="news_count node-{$result['topPicNews'][0]['news_id']}"-->
-            <!--                                            news-id="{$result['topPicNews'][0]['news_id']}">{$result['topPicNews'][0]['count']}</i>-->
-            <!--</div>-->
-            <div id="list" style="left:-670px;">
-            <a target="_blank" href="/index.php?c=detail&id={$result['topPicNews'][4]['news_id']}"><img width="670" height="360" src="{$result['topPicNews'][4]['thumb']}" alt="{$result['topPicNews'][4]['title']}"></a>
+            <div class="banner-info"><span>阅读数</span><i class="news_count node-{$result['topPicNews'][0]['news_id']}" news-id="{$result['topPicNews'][0]['news_id']}">{$result['topPicNews'][0]['count']}</i></div>
             <a target="_blank" href="/index.php?c=detail&id={$result['topPicNews'][0]['news_id']}"><img width="670" height="360" src="{$result['topPicNews'][0]['thumb']}" alt="{$result['topPicNews'][0]['title']}"></a>
-            <a target="_blank" href="/index.php?c=detail&id={$result['topPicNews'][1]['news_id']}"><img width="670" height="360" src="{$result['topPicNews'][1]['thumb']}" alt="{$result['topPicNews'][1]['title']}"></a>
-            <a target="_blank" href="/index.php?c=detail&id={$result['topPicNews'][2]['news_id']}"><img width="670" height="360" src="{$result['topPicNews'][2]['thumb']}" alt="{$result['topPicNews'][2]['title']}"></a>
-            <a target="_blank" href="/index.php?c=detail&id={$result['topPicNews'][3]['news_id']}"><img width="670" height="360" src="{$result['topPicNews'][3]['thumb']}" alt="{$result['topPicNews'][3]['title']}"></a>
-            <a target="_blank" href="/index.php?c=detail&id={$result['topPicNews'][4]['news_id']}"><img width="670" height="360" src="{$result['topPicNews'][4]['thumb']}" alt="{$result['topPicNews'][4]['title']}"></a>
-            <a target="_blank" href="/index.php?c=detail&id={$result['topPicNews'][0]['news_id']}"><img width="670" height="360" src="{$result['topPicNews'][0]['thumb']}" alt="{$result['topPicNews'][0]['title']}"></a>
-          </div>
-          <div id="buttons">
-              <span index="1" class="on"></span>
-              <span index="2"></span>
-              <span index="3"></span>
-              <span index="4"></span>
-              <span index="5"></span>
-          </div>
-          <a href="javascript:;" id="prev" class="arrow">&lt;</a>
-          <a href="javascript:;" id="next" class="arrow">&gt;</a>
-          </div>
           </div>
           <div class="banner-right">
             <ul>
               <volist name="result['topSmallNews']" id="vo">
               <li>
-                <a target="_blank" href="/index.php?c=detail&id={$vo.news_id}"><img width="150" height="113"
-                                                                                    src="{$vo.thumb}" alt="{$vo.title}"></a>
+                <a target="_blank" href="/index.php?c=detail&id={$vo.news_id}"><img width="150" height="113" src="{$vo.thumb}" alt="{$vo.title}"></a>
               </li>
               </volist>
             </ul>
@@ -169,23 +24,20 @@
           <dl>
             <dt><a target="_blank" href="/index.php?c=detail&id={$vo.news_id}">{$vo.title}</a></dt>
             <dd class="news-img">
-              <a target="_blank" href="/index.php?c=detail&id={$vo.news_id}"><img width="192" height="108"
-                                                                                  src="{$vo.thumb}"
-                                                                                  alt="{$vo.title}"></a>
+              <a target="_blank" href="/index.php?c=detail&id={$vo.news_id}"><img width="192" height="108" src="{$vo.thumb}" alt="{$vo.title}"></a>
             </dd>
             <dd class="news-intro">
               {$vo.description}
             </dd>
             <dd class="news-info">
-              {$vo.keywords} <span>{$vo.create_time|date="Y-m-d H:i",###}</span> 阅读(<i news-id="{$vo.news_id}"
-                                                                                       class="news_count node-{$vo.news_id}">{$vo.count}</i>&nbsp;)
+              {$vo.keywords} <span>{$vo.create_time|date="Y-m-d H:i",###}</span> 阅读(<i news-id="{$vo.news_id}" class="news_count node-{$vo.news_id}">{$vo.count}</i>&nbsp;)
             </dd>
           </dl>
           </volist>
         </div>
       </div>
       <!--网页右侧排行-->
-      <include file="Index/right"/>
+      <include file="Index/right" />
     </div>
   </div>
 </section>

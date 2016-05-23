@@ -7,7 +7,6 @@
  */
 
 namespace Common\Model;
-
 use Think\Model;
 
 class PositionModel extends Model
@@ -20,10 +19,9 @@ class PositionModel extends Model
         $this->_db = M("position");
     }
 
-    public function insert($data = array())
-    {
+    public function insert($data = array()){
 
-        if (!$data || !is_array($data)) {
+        if (!$data || !is_array($data)){
             return 0;
         }
         $data['create_time'] = time();
@@ -31,58 +29,51 @@ class PositionModel extends Model
     }
 
     //获取推荐位信息
-    public function getPositions($data, $page, $pageSize = 10)
-    {
+    public function getPositions($data,$page,$pageSize = 10){
 
-        $data['status'] = array('neq', -1);
+        $data['status'] = array('neq' , -1);
         $offset = ($page - 1) * $pageSize;
-        $list = $this->_db->where($data)->order('id')->limit($offset, $pageSize)->select();
+        $list = $this->_db->where($data)->order('id')->limit($offset,$pageSize)->select();
         return $list;
     }
 
-    public function getPositionsCount($data = array())
-    {
-        $data['status'] = array('neq', -1);
+    public function getPositionsCount($data = array()){
+        $data['status'] = array('neq',-1);
         return $this->_db->where($data)->count();
     }
 
-    public function getNormalPositions()
-    {
+    public function getNormalPositions(){
         $condition = array('status' => 1);
         $list = $this->_db->where($condition)->order('id')->select();
         return $list;
     }
 
-    public function updateStatusById($id, $status)
-    {
-        if (!is_numeric($status)) {
+    public function updateStatusById($id,$status){
+        if(!is_numeric($status)){
             throw_exception('status不能为非数字');
         }
-        if (!$id || !is_numeric($id)) {
+        if(!$id || !is_numeric($id)){
             throw_exception('ID不合法');
         }
         $data['status'] = $status;
 
-        return $this->_db->where("id=" . $id)->save($data);
+        return $this->_db->where("id=".$id)->save($data);
     }
 
     //查找数据 用于填充编辑器内容
-    public function find($id)
-    {
-        $data = $this->_db->where('id=' . $id)->find();
+    public function find($id){
+        $data = $this->_db->where('id='.$id)->find();
         return $data;
     }
-
     //保存更新后的推荐位数据
-    public function updatePositionsById($id, $data)
-    {
-        if (!$id || !is_numeric($id)) {
+    public function updatePositionsById($id,$data){
+        if (!$id || !is_numeric($id)){
             throw_exception('ID不合法');
         }
-        if (!$data || !is_array($data)) {
+        if (!$data || !is_array($data)){
             throw_exception('数据不合法');
         }
-        return $this->_db->where('id=' . $id)->save($data);
+        return $this->_db->where('id='.$id)->save($data);
     }
-
+    
 }

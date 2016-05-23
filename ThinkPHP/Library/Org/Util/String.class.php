@@ -9,7 +9,7 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 namespace Org\Util;
-class String {
+class Strings {
 
     /**
      * 生成UUID 单机使用

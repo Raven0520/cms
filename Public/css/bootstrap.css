@@ -3721,6 +3721,7 @@ tbody.collapse.in {
   pointer-events: none;
 }
 .input-group {
+  float: left;
   position: relative;
   display: table;
   border-collapse: separate;

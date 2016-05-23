@@ -31,18 +31,16 @@
                         <span class="input-group-addon">推荐位</span>
                         <select class="form-control" name="position_id">
                             <foreach name="positions" item="position">
-                                <option value="{$position.id}"
-                                <if condition="$position['id'] eq $position_id">selected = "selected"</if>
-                                >{$position.name}</option>
+                                <option value="{$position.id}" <if condition="$position['id'] eq $position_id">selected = "selected"</if>>{$position.name}</option>
                             </foreach>
                         </select>
                     </div>
                 </div>
-                <input type="hidden" name="c" value="positionContent"/>
+                <input type="hidden" name="c" value="positioncontent"/>
                 <input type="hidden" name="a" value="index"/>
                 <div class="col-md-3">
                     <div class="input-group">
-                        <input class="form-control" name="title" type="text" value="{$title}" placeholder="文章标题"/>
+                        <input class="form-control" name="title" type="text" value="{$title}" placeholder="文章标题" />
                 <span class="input-group-btn">
                   <button id="sub_data" type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
                 </span>
@@ -70,31 +68,25 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <volist name="contents" id="content">
+                            <volist name="contents" id="content">
                             <tr>
-                                <td><input size=4 type='text' name="listorder[{$content.id}]"
-                                           value="{$content.listorder}"/></td>
+                                <td><input size=4 type='text'  name="listorder[{$content.id}]" value="{$content.listorder}"/></td>
                                 <td>{$content.id}</td>
                                 <td>{$content.title}</td>
                                 <td>{$content.create_time|date="Y-m-d H:i",###}</td>
                                 <td>{$content.thumb|isThumb}</td>
                                 <td>
                                     <!--将status转化成文字-->
-                                    <span attr-status="<if condition=" $content['status'] eq 1">0
-                                    <else/>
-                                    1</if>" attr-id="{$content.id}" class="sing_cursor singcms-on-off"
-                                    id="singcms-on-off" >{$content.status|getMenuStatus}</span>
+                                    <span  attr-status="<if condition="$content['status'] eq 1">0<else/>1</if>"  attr-id="{$content.id}" class="sing_cursor singcms-on-off" id="singcms-on-off" >{$content.status|getMenuStatus}</span>
                                 </td>
                                 <td>
-                                    <span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true"
-                                          id="singcms-edit" attr-id="{$content.id}"></span>
-                                    <a href="javascript:void(0)" id="singcms-delete" attr-id="{$content.id}"
-                                       attr-message="删除">
+                                    <span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="{$content.id}" ></span>
+                                    <a href="javascript:void(0)" id="singcms-delete"  attr-id="{$content.id}"  attr-message="删除">
                                         <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
                                     </a>
                                 </td>
                             </tr>
-                        </volist>
+                            </volist>
                         </tbody>
                     </table>
                     </from>
@@ -119,10 +111,10 @@
 <!-- /#wrapper -->
 <script>
     var SCOPE = {
-        'edit_url' : '/admin.php?c=positionContent&a=edit',
-        'set_status_url' : '/admin.php?c=positionContent&a=setStatus',
-        'add_url' : '/admin.php?c=positionContent&a=add',
-        'listorder_url' : '/admin.php?c=positionContent&a=listorder',
+        'edit_url' : '/admin.php?c=positioncontent&a=edit',
+        'set_status_url' : '/admin.php?c=positioncontent&a=setStatus',
+        'add_url' : '/admin.php?c=positioncontent&a=add',
+        'listorder_url' : '/admin.php?c=positioncontent&a=listorder',
     }
 
 </script>

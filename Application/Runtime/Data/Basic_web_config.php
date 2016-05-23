@@ -1,1 +1,1 @@
-a:5:{s:5:"title";s:8:"ravencms";s:8:"keywords";s:30:"资讯  体育  新闻  科技";s:11:"description";s:24:"分享一些学习资料";s:9:"dumpmysql";s:1:"0";s:10:"cacheindex";s:1:"0";}
+a:3:{s:5:"title";s:16:"singcms咨询网";s:8:"keywords";s:27:"singcms咨询 体育 新闻";s:11:"description";s:34:"singcms提供最新的新闻咨询";}

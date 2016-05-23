@@ -48,7 +48,7 @@
 						<label for="inputname" class="col-sm-2 control-label">缩图:</label>
 						<div class="col-sm-5">
 							<input id="file_upload"  type="file" multiple="true" >
-							<img style="display: none" id="upload_org_code_img" src="" width="360" height="150">
+							<img style="display: none" id="upload_org_code_img" src="" width="150" height="150">
 							<input id="file_upload_image" name="thumb" type="hidden" multiple="true" value="">
 						</div>
 					</div>
@@ -95,8 +95,8 @@
 </div>
 <script>
 	var SCOPE = {
-		'save_url' : '/admin.php?c=positionContent&a=add',
-		'jump_url' : '/admin.php?c=positionContent&a=index',
+		'save_url' : '/admin.php?c=positioncontent&a=add',
+		'jump_url' : '/admin.php?c=positioncontent&a=index',
 		'ajax_upload_image_url' : '/admin.php?c=image&a=ajaxuploadimage',
 		'ajax_upload_swf' : '/Public/js/party/uploadify.swf'
 	};
