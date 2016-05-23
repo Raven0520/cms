@@ -7,6 +7,7 @@
  */
 
 namespace Home\Controller;
+
 use Think\Controller;
 
 class CommonController extends Controller
@@ -20,16 +21,18 @@ class CommonController extends Controller
     /*
      * 获取排行数据
      */
-    public function getRank(){
-        $conds ['status'] =1;
-        $news = D("News")->getRank($conds,10);
+    public function getRank()
+    {
+        $conds ['status'] = 1;
+        $news = D("News")->getRank($conds, 10);
         return $news;
     }
 
     //404页面处理
-    public function error($message = ''){
+    public function error($message = '')
+    {
         $message = $message ? $message : '系统发生错误';
-        $this->assign('message',$message);
+        $this->assign('message', $message);
         $this->display("Index/error");
     }
 }

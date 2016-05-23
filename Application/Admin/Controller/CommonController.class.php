@@ -46,9 +46,11 @@ class CommonController extends Controller {
 
 		return false;
 	}
+
 	//修改状态
-	public function setStatus($data,$models)
+	public function setStatus($data, $models)
 	{
+	    $jumpUrl = $_SERVER['HTTP_REFERER'];
 		try {
 			if ($data) {
 				$id = $data['id'];
@@ -61,41 +63,43 @@ class CommonController extends Controller {
 				$res = D($models)->updateStatusById($id, $status);
 
 				if ($res) {
-					return show(1, '操作成功');
+					return show(1, '操作成功',array('jump_url'=> $jumpUrl));
 				} else {
-					return show(0, '操作失败');
+					return show(0, '操作失败',array('jump_url'=> $jumpUrl));
 				}
 			}
-			return show(0, '没有提交内容');
+			return show(0, '没有提交内容',array('jump_url'=> $jumpUrl));
 		} catch (Exception $e) {
 			return show(0, $e->getMessage());
 		}
 	}
+
 	//页面排序功能
-	public function listorder($model =''){
+	public function listorder($model = '')
+	{
 		$listorder = $_POST['listorder'];
 		$jumpUrl = $_SERVER['HTTP_REFERER'];
 		$errors = array();
 
-		try{
-			if($listorder){
+		try {
+			if ($listorder) {
 				//执行文章排序操作
-				foreach ($listorder as $id => $v){
-					$res = D($model)->updateListorderById($id,$v);
+				foreach ($listorder as $id => $v) {
+					$res = D($model)->updateListorderById($id, $v);
 
-					if ($res === false){
+					if ($res === false) {
 						$errors[] = $id;
 					}
 				}
-				if ($errors){
-					return show(0,'排序失败-'.implode(',',$errors),array('jump_url'=>$jumpUrl));
+				if ($errors) {
+					return show(0, '排序失败-' . implode(',', $errors), array('jump_url' => $jumpUrl));
 				}
-				return show(1,'排序成功',array('jump_url'=>$jumpUrl));
+				return show(1, '排序成功', array('jump_url' => $jumpUrl));
 			}
-		}catch (Exception $e){
-			return show(0,$e->getMessage());
+		} catch (Exception $e) {
+			return show(0, $e->getMessage());
 		}
-		return show(0,'排序文章失败',array('jump_url'=>$jumpUrl));
+		return show(0, '排序文章失败', array('jump_url' => $jumpUrl));
 	}
 
 }

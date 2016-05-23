@@ -63,12 +63,13 @@ class PositionController extends CommonController
 
     //改变推荐位状态
     //改变推荐位状态
-    public function setStatus(){
+    public function setStatus()
+    {
         $data = array(
             'id' => intval($_POST['id']),
             'status' => intval($_POST['status']),
         );
-        return parent::setStatus($data,'Position');
+        return parent::setStatus($data, 'Position');
     }
 
     //获取推荐位编辑器内容

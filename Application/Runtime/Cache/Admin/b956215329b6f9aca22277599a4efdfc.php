@@ -43,7 +43,7 @@
 <div id="wrapper">
 
     <?php
- $navs = D("Menu")->getAdminMenus(); $index = 'index'; ?>
+ $navs = D("Menu")->getAdminMenus(); $username = getLoginUsername(); foreach($navs as $k=>$v){ if($v['c'] == 'admin' && $username != 'admin'){ unset($navs[$k]); } } $index = 'index'; ?>
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
@@ -53,10 +53,11 @@
   </div>
   <!-- Top Menu Items -->
   <ul class="nav navbar-right top-nav">
-    
-    
+
+    <!--通过公共方法获取用户名-->
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+              class="fa fa-user"></i> <?php echo getLoginUsername() ?> <b class="caret"></b></a>
       <ul class="dropdown-menu">
         <li>
           <a href="/admin.php?c=admin&a=personal"><i class="fa fa-fw fa-user"></i> 个人中心</a>
@@ -76,7 +77,7 @@
         <a href="/admin.php"><i class="fa fa-fw fa-dashboard"></i> 首页</a>
       </li>
       <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?><li <?php echo (getActive($nav["c"])); ?>>
-        <a href=" <?php echo (getAdminMenuUrl($nav)); ?> "><i class="fa fa-fw fa-bar-chart-o"></i><?php echo ($nav["name"]); ?></a>
+          <a href=" <?php echo (getAdminMenuUrl($nav)); ?> "><i class="fa fa-fw fa-bar-chart-o"></i><?php echo ($nav["name"]); ?></a>
       </li><?php endforeach; endif; else: echo "" ;endif; ?>
     </ul>
   </div>
@@ -110,8 +111,12 @@
                         <select class="form-control" name="type">
                             <option value=''>请选择类型</option>
 
-                            <option value="1" <?php if($type == 1): ?>selected = "selected"<?php endif; ?> > 后台菜单 </option>
-                            <option value="0" <?php if($type == 0): ?>selected = "selected"<?php endif; ?> >    前端导航 </option>
+                            <option value="1"
+                            <?php if($type == 1): ?>selected = "selected"<?php endif; ?>
+                            > 后台菜单 </option>
+                            <option value="0"
+                            <?php if($type == 0): ?>selected = "selected"<?php endif; ?>
+                            > 前端导航 </option>
                         </select>
                 <span class="input-group-btn">
                   <button id="sub_data" type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i>
@@ -150,7 +155,8 @@
                                 </thead>
                                 <tbody>
                                 <?php if(is_array($menus)): $i = 0; $__LIST__ = $menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menu): $mod = ($i % 2 );++$i;?><tr>
-                                        <td><input size="4" type="text" name="listorder[<?php echo ($menu["menu_id"]); ?>]" value="<?php echo ($menu["listorder"]); ?>"/></td>
+                                        <td><input size="4" type="text" name="listorder[<?php echo ($menu["menu_id"]); ?>]"
+                                                   value="<?php echo ($menu["listorder"]); ?>"/></td>
                                         <td><?php echo ($menu["menu_id"]); ?></td>
                                         <td><?php echo ($menu["name"]); ?></td>
                                         <td><?php echo ($menu["m"]); ?></td>
@@ -158,7 +164,9 @@
                                         <td><?php echo (getMenuStatus($menu["status"])); ?></td>
                                         <td><span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit"
                                                   attr-id="<?php echo ($menu["menu_id"]); ?>"></span>
-                                            <a href="javascript:void(0)" attr-id="<?php echo ($menu["menu_id"]); ?>" id="singcms-delete" attr-a="menu" attr-message="删除" class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                                            <a href="javascript:void(0)" attr-id="<?php echo ($menu["menu_id"]); ?>" id="singcms-delete"
+                                               attr-a="menu" attr-message="删除" class="glyphicon glyphicon-remove-circle"
+                                               aria-hidden="true"></span></a>
                                         </td>
                                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
@@ -171,7 +179,8 @@
                             </ul>
                         </nav>
                         <div>
-                            <button id="button-listorder" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                            <button id="button-listorder" type="button" class="btn btn-primary dropdown-toggle"
+                                    data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus"
                                                                                      aria-hidden="true"></span>更新排序
                             </button>
