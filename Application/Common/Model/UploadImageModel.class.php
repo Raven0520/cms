@@ -15,9 +15,7 @@ class UploadImageModel extends Model {
     public function __construct() {
         $this->_uploadObj = new  \Think\Upload();
 
-        //上传文件的目录
         $this->_uploadObj->rootPath = './'.self::UPLOAD.'/';
-        //文件储存的格式
         $this->_uploadObj->subName = date(Y) . '/' . date(m) .'/' . date(d);
     }
 

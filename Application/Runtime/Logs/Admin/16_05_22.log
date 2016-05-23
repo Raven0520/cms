@@ -1,0 +1,1362 @@
+[ 2016-05-22T18:18:14+08:00 ] 172.16.110.0 /index.php?m=admin&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004536s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005218s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005327s ]
+
+[ 2016-05-22T18:18:19+08:00 ] 172.16.110.0 /index.php?m=admin&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004360s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000382s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003804s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004739s ]
+
+[ 2016-05-22T18:18:26+08:00 ] 172.16.110.0 /index.php?m=admin&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003945s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.379436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.379836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004481s ]
+
+[ 2016-05-22T19:47:10+08:00 ] 172.16.110.0 /index.php?m=admin&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010864s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.194441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.194698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004666s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006235s ]
+
+[ 2016-05-22T20:42:31+08:00 ] 172.16.110.0 /index.php?m=admin&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.069945s ]
+INFO: [ app_init ] --END-- [ RunTime:0.353926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.253352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.454336s ]
+INFO: [ view_parse ] --START--
+
+[ 2016-05-22T20:50:28+08:00 ] 172.16.110.0 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005726s ]
+NOTIC: [8] Undefined variable: module /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2016-05-22T20:50:32+08:00 ] 172.16.110.0 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011654s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.026884s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.081903s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:2.454277s ]
+INFO: [ view_parse ] --END-- [ RunTime:2.641363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.469329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.807561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.095747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.163502s ]
+
+[ 2016-05-22T20:50:33+08:00 ] 172.16.110.0 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.023176s ]
+INFO: [ app_init ] --END-- [ RunTime:0.240112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.309854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.538423s ]
+NOTIC: [8] Undefined variable: module /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2016-05-22T20:50:43+08:00 ] 172.16.110.0 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002453s ]
+INFO: [ app_init ] --END-- [ RunTime:0.063763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.038448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.068142s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.042019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.197527s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:2.319478s ]
+INFO: [ view_parse ] --END-- [ RunTime:3.005710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:1.159420s ]
+INFO: [ view_filter ] --END-- [ RunTime:2.230459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.693885s ]
+INFO: [ app_end ] --END-- [ RunTime:1.074918s ]
+
+[ 2016-05-22T20:50:46+08:00 ] 172.16.110.0 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001539s ]
+INFO: [ app_init ] --END-- [ RunTime:0.041747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.027315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.053454s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.027437s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.072767s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.811298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.847320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.054885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.121891s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.046036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.093347s ]
+
+[ 2016-05-22T20:51:00+08:00 ] 172.16.110.0 /index.php?m=admin&c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000283s ]
+INFO: [ app_init ] --END-- [ RunTime:0.060051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.041109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.061835s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:3.3724s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:1.5483s ]
+SQL: UPDATE `cms_admin` SET `lastlogintime`='1463921457' WHERE ( admin_id=1 ) [ RunTime:1.3625s ]
+
+[ 2016-05-22T20:59:17+08:00 ] 172.16.110.0 /index.php?m=admin&c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002353s ]
+INFO: [ app_init ] --END-- [ RunTime:0.048404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.046273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.072880s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:5.7198s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` = 1 ORDER BY count desc LIMIT 1   [ RunTime:5.1191s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` WHERE `status` = 1 LIMIT 1   [ RunTime:4.2254s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/PositionModel.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:20.3630s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_position` WHERE `status` <> -1 LIMIT 1   [ RunTime:11.0634s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:1.4533s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_admin` WHERE `status` = 1 AND `lastlogintime` > 1463846400 LIMIT 1   [ RunTime:4.4129s ]
+NOTIC: [2] Illegal string offset 'tp_count' /data/webroot/Application/Common/Model/AdminModel.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+
+[ 2016-05-22T21:01:27+08:00 ] 172.16.110.0 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006288s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.1275s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` = 1 ORDER BY count desc LIMIT 1   [ RunTime:0.0705s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0614s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/PositionModel.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.1058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_position` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0572s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.1110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_admin` WHERE `status` = 1 AND `lastlogintime` > 1463846400 LIMIT 1   [ RunTime:0.0569s ]
+NOTIC: [2] Illegal string offset 'tp_count' /data/webroot/Application/Common/Model/AdminModel.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003637s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 116 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.1787s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.1143s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.201243s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.201430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.115662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.115917s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010088s ]
+
+[ 2016-05-22T21:01:31+08:00 ] 172.16.110.0 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009012s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009093s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.1048s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` = 1 ORDER BY count desc LIMIT 1   [ RunTime:0.0693s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0707s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/PositionModel.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.1317s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_position` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.4051s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.1214s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_admin` WHERE `status` = 1 AND `lastlogintime` > 1463846400 LIMIT 1   [ RunTime:0.0734s ]
+NOTIC: [2] Illegal string offset 'tp_count' /data/webroot/Application/Common/Model/AdminModel.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001280s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001484s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 116 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.1991s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.3827s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.222709s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.222942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.315068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.315444s ]
+
+[ 2016-05-22T21:01:39+08:00 ] 172.16.110.0 /admin.php?c=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006620s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/AdminController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.1282s ]
+SQL: SELECT * FROM `cms_admin`  [ RunTime:0.0540s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001941s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002116s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 116 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.1602s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.3297s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Array to string conversion /data/webroot/Application/Runtime/Cache/Admin/b682812e058c4f7cab74d08ab9eabe11.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.943315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.943702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.274424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.274654s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.223023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.223239s ]
+
+[ 2016-05-22T21:01:42+08:00 ] 172.16.110.0 /admin.php?c=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006174s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: module /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2016-05-22T21:01:45+08:00 ] 172.16.110.0 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001530s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002612s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003293s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005931s ]
+
+[ 2016-05-22T21:01:59+08:00 ] 172.16.110.0 /admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007629s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005965s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: title /data/webroot/Application/Admin/Controller/ContentController.class.php 第 26 行.
+NOTIC: [8] Undefined index: catid /data/webroot/Application/Admin/Controller/ContentController.class.php 第 27 行.
+NOTIC: [8] Undefined index: p /data/webroot/Application/Admin/Controller/ContentController.class.php 第 38 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0726s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` <> -1 ORDER BY listorder desc, news_id desc LIMIT 0,10   [ RunTime:0.0521s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` LIMIT 1   [ RunTime:0.0340s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/PositionModel.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0911s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` = 1 ORDER BY id  [ RunTime:0.0727s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 116 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0827s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0562s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000867s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001224s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.0738s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.194138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.195363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009272s ]
+
+[ 2016-05-22T21:02:01+08:00 ] 172.16.110.0 /admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000408s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008632s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: module /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2016-05-22T21:02:02+08:00 ] 172.16.110.0 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009978s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000758s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000960s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009555s ]
+
+[ 2016-05-22T21:03:15+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009776s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.1049s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0401s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002333s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006607s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.0993s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.580872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.581047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010728s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008271s ]
+
+[ 2016-05-22T21:03:17+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007073s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: module /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/webroot/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2016-05-22T21:03:17+08:00 ] 172.16.110.0 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007427s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002612s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003374s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.203879s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.204574s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006540s ]
+
+[ 2016-05-22T21:04:05+08:00 ] 172.16.110.0 /admin.php?c=image&a=ajaxuploadimage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006943s ]
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' /data/webroot/Application/Common/Model/UploadImageModel.class.php 第 19 行.
+NOTIC: [8] Use of undefined constant m - assumed 'm' /data/webroot/Application/Common/Model/UploadImageModel.class.php 第 19 行.
+NOTIC: [8] Use of undefined constant d - assumed 'd' /data/webroot/Application/Common/Model/UploadImageModel.class.php 第 19 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /data/webroot/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-05-22T21:05:28+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.265063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.728791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.729053s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: news_id /data/webroot/Application/Admin/Controller/ContentController.class.php 第 77 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.1705s ]
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741ae4584493.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','PHP','1463922328','admin')
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741ae4584493.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','PHP','1463922328','admin')
+
+[ 2016-05-22T21:05:30+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000406s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006821s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: news_id /data/webroot/Application/Admin/Controller/ContentController.class.php 第 77 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.1576s ]
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741ae4584493.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','PHP','1463922330','admin')
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741ae4584493.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','PHP','1463922330','admin')
+
+[ 2016-05-22T21:05:36+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007482s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: news_id /data/webroot/Application/Admin/Controller/ContentController.class.php 第 77 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.1499s ]
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741ae4584493.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','PHP','1463922335','admin')
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741ae4584493.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','PHP','1463922335','admin')
+
+[ 2016-05-22T21:05:37+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000387s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007502s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: news_id /data/webroot/Application/Admin/Controller/ContentController.class.php 第 77 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.1596s ]
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741ae4584493.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','PHP','1463922337','admin')
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741ae4584493.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','PHP','1463922337','admin')
+
+[ 2016-05-22T21:06:20+08:00 ] 172.16.110.0 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005209s ]
+ERR: 无法加载控制器:Basic
+
+[ 2016-05-22T21:06:28+08:00 ] 172.16.110.0 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001169s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007148s ]
+ERR: 无法加载控制器:Basic
+
+[ 2016-05-22T21:07:17+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006324s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.1433s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY listorder desc,menu_id desc  [ RunTime:0.1162s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002573s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.1103s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.266959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.267411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008855s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008875s ]
+
+[ 2016-05-22T21:08:09+08:00 ] 172.16.110.0 /admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000953s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006527s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: title /data/webroot/Application/Admin/Controller/ContentController.class.php 第 26 行.
+NOTIC: [8] Undefined index: catid /data/webroot/Application/Admin/Controller/ContentController.class.php 第 27 行.
+NOTIC: [8] Undefined index: p /data/webroot/Application/Admin/Controller/ContentController.class.php 第 38 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0906s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` <> -1 ORDER BY listorder desc, news_id desc LIMIT 0,10   [ RunTime:0.1010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` LIMIT 1   [ RunTime:0.0551s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/PositionModel.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.1541s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` = 1 ORDER BY id  [ RunTime:0.0673s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 116 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.1593s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0917s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001689s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002837s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.1636s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.299530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.299766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010190s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010961s ]
+
+[ 2016-05-22T21:08:12+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006835s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006059s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.1025s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0742s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004719s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.1084s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.599995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.600366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009616s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011869s ]
+
+[ 2016-05-22T21:08:56+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007616s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.1490s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0781s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004899s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.1329s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.567844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.568325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008973s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009163s ]
+
+[ 2016-05-22T21:09:10+08:00 ] 172.16.110.0 /admin.php?c=image&a=ajaxuploadimage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007441s ]
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' /data/webroot/Application/Common/Model/UploadImageModel.class.php 第 19 行.
+NOTIC: [8] Use of undefined constant m - assumed 'm' /data/webroot/Application/Common/Model/UploadImageModel.class.php 第 19 行.
+NOTIC: [8] Use of undefined constant d - assumed 'd' /data/webroot/Application/Common/Model/UploadImageModel.class.php 第 19 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /data/webroot/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-05-22T21:09:42+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007137s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: news_id /data/webroot/Application/Admin/Controller/ContentController.class.php 第 77 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.1300s ]
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741af76c4b17.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','PHP 版本区别','1463922582','admin')
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741af76c4b17.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','PHP 版本区别','1463922582','admin')
+
+[ 2016-05-22T21:10:25+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008437s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: news_id /data/webroot/Application/Admin/Controller/ContentController.class.php 第 77 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.1283s ]
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741af76c4b17.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','PHP 版本区别','1463922625','admin')
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741af76c4b17.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','PHP 版本区别','1463922625','admin')
+
+[ 2016-05-22T21:10:27+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006878s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: news_id /data/webroot/Application/Admin/Controller/ContentController.class.php 第 77 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0854s ]
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741af76c4b17.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','PHP 版本区别','1463922627','admin')
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741af76c4b17.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','PHP 版本区别','1463922627','admin')
+
+[ 2016-05-22T21:10:44+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005918s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: news_id /data/webroot/Application/Admin/Controller/ContentController.class.php 第 77 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.1179s ]
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741af76c4b17.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','PHP 版本区别','1463922644','admin')
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741af76c4b17.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','PHP 版本区别','1463922644','admin')
+
+[ 2016-05-22T21:13:50+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008863s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: news_id /data/webroot/Application/Admin/Controller/ContentController.class.php 第 77 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.2150s ]
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741af76c4b17.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','PHP 版本区别','1463922829','admin')
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741af76c4b17.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','PHP 版本区别','1463922829','admin')
+
+[ 2016-05-22T21:17:47+08:00 ] 172.16.110.0 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000192s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011292s ]
+ERR: 无法加载控制器:Basic
+
+[ 2016-05-22T21:18:00+08:00 ] 172.16.110.0 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007722s ]
+ERR: 无法加载控制器:Basic
+
+[ 2016-05-22T21:18:09+08:00 ] 172.16.110.0 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000578s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012353s ]
+ERR: 无法加载控制器:Menu
+
+[ 2016-05-22T21:18:16+08:00 ] 172.16.110.0 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000235s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011009s ]
+ERR: 无法加载控制器:Menu
+
+[ 2016-05-22T21:18:26+08:00 ] 172.16.110.0 /admin.php?c=basic&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000240s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009847s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005412s ]
+ERR: 无法加载控制器:Basic
+
+[ 2016-05-22T21:18:33+08:00 ] 172.16.110.0 /admin.php?c=basic&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008851s ]
+ERR: 无法加载控制器:Basic
+
+[ 2016-05-22T21:20:58+08:00 ] 172.16.110.0 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006741s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.1234s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` = 1 ORDER BY count desc LIMIT 1   [ RunTime:0.0908s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0782s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/PositionModel.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.1310s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_position` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.2500s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.1231s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_admin` WHERE `status` = 1 AND `lastlogintime` > 1463846400 LIMIT 1   [ RunTime:0.0819s ]
+NOTIC: [2] Illegal string offset 'tp_count' /data/webroot/Application/Common/Model/AdminModel.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001905s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004131s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 116 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.1307s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.3885s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.305654s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.308530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013553s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008324s ]
+
+[ 2016-05-22T21:21:01+08:00 ] 172.16.110.0 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005726s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.1240s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` = 1 ORDER BY count desc LIMIT 1   [ RunTime:0.0734s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0658s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/PositionModel.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.1418s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_position` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0878s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.1549s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_admin` WHERE `status` = 1 AND `lastlogintime` > 1463846400 LIMIT 1   [ RunTime:0.0766s ]
+NOTIC: [2] Illegal string offset 'tp_count' /data/webroot/Application/Common/Model/AdminModel.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001338s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001847s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 116 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.1704s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.0833s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.530886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.531058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.183089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.198692s ]
+
+[ 2016-05-22T21:21:04+08:00 ] 172.16.110.0 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007123s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/BasicController.class.php 第 15 行.
+ERR: 无法加载控制器:Basic
+
+[ 2016-05-22T21:21:09+08:00 ] 172.16.110.0 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006719s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/BasicController.class.php 第 15 行.
+ERR: 无法加载控制器:Basic
+
+[ 2016-05-22T21:21:42+08:00 ] 172.16.110.0 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006286s ]
+NOTIC: [2048] Declaration of Common\Model\BasicModel::save() should be compatible with Think\Model::save($data = '', $options = Array) /data/webroot/Application/Common/Model/BasicModel.class.php 第 14 行.
+NOTIC: [2048] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/BasicModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `cms_basic` [ RunTime:0.1166s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001527s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001724s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 116 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.2001s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.1218s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.458739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.459305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008802s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.313282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.313621s ]
+
+[ 2016-05-22T21:21:45+08:00 ] 172.16.110.0 /admin.php?c=basic&a=cache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006449s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002767s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003518s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.1478s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.1149s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.579598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.579852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009728s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007796s ]
+
+[ 2016-05-22T21:21:54+08:00 ] 172.16.110.0 /admin.php?c=basic&a=cache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011016s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008353s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002392s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.1315s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.0763s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.938245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.938467s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010173s ]
+
+[ 2016-05-22T21:23:02+08:00 ] 172.16.110.0 /admin.php?c=basic&a=cache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006534s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.004931s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006945s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.1497s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.2917s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.793361s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.793778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.623658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.629081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013215s ]
+
+[ 2016-05-22T21:23:35+08:00 ] 172.16.110.0 /admin.php?c=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.438935s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009372s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/AdminController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.1383s ]
+SQL: SELECT * FROM `cms_admin`  [ RunTime:0.0549s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001566s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002716s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 116 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.2222s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.1088s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Array to string conversion /data/webroot/Application/Runtime/Cache/Admin/b682812e058c4f7cab74d08ab9eabe11.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.914748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.915289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011065s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.215735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.216029s ]
+
+[ 2016-05-22T21:23:41+08:00 ] 172.16.110.0 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008212s ]
+NOTIC: [2048] Declaration of Common\Model\BasicModel::save() should be compatible with Think\Model::save($data = '', $options = Array) /data/webroot/Application/Common/Model/BasicModel.class.php 第 14 行.
+NOTIC: [2048] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/BasicModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `cms_basic` [ RunTime:0.1362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001497s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001947s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 116 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.1831s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.1597s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.775852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.778053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.126342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.132118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011923s ]
+
+[ 2016-05-22T21:24:22+08:00 ] 172.16.110.0 /admin.php?c=basic&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008775s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006873s ]
+NOTIC: [2048] Declaration of Common\Model\BasicModel::save() should be compatible with Think\Model::save($data = '', $options = Array) /data/webroot/Application/Common/Model/BasicModel.class.php 第 14 行.
+NOTIC: [2048] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/BasicModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `cms_basic` [ RunTime:0.1262s ]
+
+[ 2016-05-22T21:24:26+08:00 ] 172.16.110.0 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000187s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008847s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009771s ]
+NOTIC: [2048] Declaration of Common\Model\BasicModel::save() should be compatible with Think\Model::save($data = '', $options = Array) /data/webroot/Application/Common/Model/BasicModel.class.php 第 14 行.
+NOTIC: [2048] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/BasicModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `cms_basic` [ RunTime:0.1396s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004453s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 116 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.1750s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.1450s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.222041s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.222794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012806s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008042s ]
+
+[ 2016-05-22T21:24:32+08:00 ] 172.16.110.0 /admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007854s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005846s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: title /data/webroot/Application/Admin/Controller/ContentController.class.php 第 26 行.
+NOTIC: [8] Undefined index: catid /data/webroot/Application/Admin/Controller/ContentController.class.php 第 27 行.
+NOTIC: [8] Undefined index: p /data/webroot/Application/Admin/Controller/ContentController.class.php 第 38 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.1417s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` <> -1 ORDER BY listorder desc, news_id desc LIMIT 0,10   [ RunTime:0.0820s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` LIMIT 1   [ RunTime:0.0661s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/PositionModel.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.1502s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` = 1 ORDER BY id  [ RunTime:0.6516s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 116 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.1583s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0752s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001949s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006264s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.1284s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.423813s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.427981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014630s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.717185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.732587s ]
+
+[ 2016-05-22T21:25:28+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008468s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/MenuModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0597s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY listorder desc,menu_id desc  [ RunTime:0.1024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001313s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003516s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc, menu_id desc  [ RunTime:0.0763s ]
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+NOTIC: [8] Undefined index: a /data/webroot/Application/Common/Common/function.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.957127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.957324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.054990s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.055080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008343s ]
+
+[ 2016-05-22T21:25:44+08:00 ] 172.16.110.0 /admin.php?c=image&a=ajaxuploadimage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.264906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.265205s ]
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' /data/webroot/Application/Common/Model/UploadImageModel.class.php 第 19 行.
+NOTIC: [8] Use of undefined constant m - assumed 'm' /data/webroot/Application/Common/Model/UploadImageModel.class.php 第 19 行.
+NOTIC: [8] Use of undefined constant d - assumed 'd' /data/webroot/Application/Common/Model/UploadImageModel.class.php 第 19 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /data/webroot/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2016-05-22T21:25:47+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010628s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+
+[ 2016-05-22T21:26:36+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007271s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: news_id /data/webroot/Application/Admin/Controller/ContentController.class.php 第 77 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.1313s ]
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741b35893a9a.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','php 版本','1463923595','admin')
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741b35893a9a.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','php 版本','1463923595','admin')
+
+[ 2016-05-22T21:27:27+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007578s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: news_id /data/webroot/Application/Admin/Controller/ContentController.class.php 第 77 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.1813s ]
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741b35893a9a.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','php 版本','1463923647','admin')
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741b35893a9a.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','php 版本','1463923647','admin')
+
+[ 2016-05-22T21:29:48+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007653s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: news_id /data/webroot/Application/Admin/Controller/ContentController.class.php 第 77 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.2345s ]
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741b35893a9a.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','php 版本','1463923788','admin')
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741b35893a9a.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','php 版本','1463923788','admin')
+
+[ 2016-05-22T21:38:03+08:00 ] 172.16.110.0 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.050890s ]
+INFO: [ app_init ] --END-- [ RunTime:0.229385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.103693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.234777s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /data/webroot/Application/Admin/Controller/ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: news_id /data/webroot/Application/Admin/Controller/ContentController.class.php 第 77 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /data/webroot/Application/Common/Model/NewsModel.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:1.2046s ]
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741b35893a9a.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','php 版本','1463924282','admin')
+ERR: 1406:Data too long for column 'description' at row 1
+ [ SQL语句 ] : INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('PHP版本区别','PHP','/upload/2016/05/22/5741b35893a9a.jpg','#5674ed','8','0','PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。用PHP做出的动态页面与其他的编程语言相比，PHP是将程序嵌入到HTML（标准通用标记语言下的一个应用）文档中去执行，执行效率比完全生成HTML标记的CGI要高许多；PHP还可以执行编译后代码，编译可以达到加密和优化代码运行，使代码运行更快。','php 版本','1463924282','admin')
+

@@ -1,4 +1,4 @@
-<include file="Index/header" />
+<include file="Index/header"/>
 <body>
 <div id="wrapper">
 
@@ -13,7 +13,7 @@
 
                     <ol class="breadcrumb">
                         <li>
-                            <i class="fa fa-dashboard"></i>  <a href="/admin.php?c=positioncontent">推荐位管理</a>
+                            <i class="fa fa-dashboard"></i> <a href="/admin.php?c=positioncontent">推荐位管理</a>
                         </li>
                         <li class="active">
                             <i class="fa fa-edit"></i> 添加
@@ -30,7 +30,8 @@
                         <div class="form-group">
                             <label for="inputname" class="col-sm-2 control-label">推荐位名称:</label>
                             <div class="col-sm-5">
-                                <input value="{$position.name}" type="text" name="name" class="form-control" id="inputname" placeholder="请填写标题">
+                                <input value="{$position.name}" type="text" name="name" class="form-control"
+                                       id="inputname" placeholder="请填写标题">
                             </div>
                         </div>
                         <!--<div class="form-group">-->
@@ -67,8 +68,12 @@
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-2 control-label">状态:</label>
                             <div class="col-sm-5">
-                                <input type="radio" name="status" id="optionsRadiosInline1" value="1" <if condition="$position['status'] eq 1">checked = "checked"</if>> 开启
-                                <input type="radio" name="status" id="optionsRadiosInline2" value="0" <if condition="$position['status'] eq 0">checked = "checked"</if>> 关闭
+                                <input type="radio" name="status" id="optionsRadiosInline1" value="1"
+                                <if condition="$position['status'] eq 1">checked = "checked"</if>
+                                > 开启
+                                <input type="radio" name="status" id="optionsRadiosInline2" value="0"
+                                <if condition="$position['status'] eq 0">checked = "checked"</if>
+                                > 关闭
                             </div>
 
                         </div>
@@ -94,13 +99,13 @@
 </div>
 <script>
     var SCOPE = {
-        'save_url' : '/admin.php?c=position&a=add',
-        'jump_url' : '/admin.php?c=position&a=index',
-        'ajax_upload_image_url' : '/admin.php?c=image&a=ajaxuploadimage',
-        'ajax_upload_swf' : '/Public/js/party/uploadify.swf'
+        'save_url': '/admin.php?c=position&a=add',
+        'jump_url': '/admin.php?c=position&a=index',
+        'ajax_upload_image_url': '/admin.php?c=image&a=ajaxuploadimage',
+        'ajax_upload_swf': '/Public/js/party/uploadify.swf'
     };
 </script>
 <!-- /#wrapper -->
 <script type="text/javascript" src="/Public/js/admin/form.js"></script>
 <script src="/Public/js/admin/image.js"></script>
-<include file="Index/footer" />
+<include file="Index/footer"/>

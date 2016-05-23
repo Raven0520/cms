@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -44,7 +43,7 @@
 <div id="wrapper">
 
     <?php
- $navs = D("Menu")->getAdminMenus(); $index = 'index'; ?>
+ $navs = D("Menu")->getAdminMenus(); $username = getLoginUsername(); foreach($navs as $k=>$v){ if($v['c'] == 'admin' && $username != 'admin'){ unset($navs[$k]); } } $index = 'index'; ?>
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
@@ -54,10 +53,11 @@
   </div>
   <!-- Top Menu Items -->
   <ul class="nav navbar-right top-nav">
-    
-    
+
+    <!--通过公共方法获取用户名-->
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+              class="fa fa-user"></i> <?php echo getLoginUsername() ?> <b class="caret"></b></a>
       <ul class="dropdown-menu">
         <li>
           <a href="/admin.php?c=admin&a=personal"><i class="fa fa-fw fa-user"></i> 个人中心</a>
@@ -77,7 +77,7 @@
         <a href="/admin.php"><i class="fa fa-fw fa-dashboard"></i> 首页</a>
       </li>
       <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?><li <?php echo (getActive($nav["c"])); ?>>
-        <a href=" <?php echo (getAdminMenuUrl($nav)); ?> "><i class="fa fa-fw fa-bar-chart-o"></i><?php echo ($nav["name"]); ?></a>
+          <a href=" <?php echo (getAdminMenuUrl($nav)); ?> "><i class="fa fa-fw fa-bar-chart-o"></i><?php echo ($nav["name"]); ?></a>
       </li><?php endforeach; endif; else: echo "" ;endif; ?>
     </ul>
   </div>
@@ -94,7 +94,7 @@
 
                     <ol class="breadcrumb">
                         <li>
-                            <i class="fa fa-dashboard"></i>  <a href="/admin.php?c=menu">菜单管理</a>
+                            <i class="fa fa-dashboard"></i> <a href="/admin.php?c=menu">菜单管理</a>
                         </li>
                         <li class="active">
                             <i class="fa fa-edit"></i> 编辑
@@ -111,33 +111,41 @@
                         <div class="form-group">
                             <label for="inputname" class="col-sm-2 control-label">菜单名:</label>
                             <div class="col-sm-5">
-                                <input type="text" name="name" class="form-control" id="inputname" placeholder="请填写菜单名" value="<?php echo ($menu["name"]); ?>">
+                                <input type="text" name="name" class="form-control" id="inputname" placeholder="请填写菜单名"
+                                       value="<?php echo ($menu["name"]); ?>">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-2 control-label">菜单类型:</label>
                             <div class="col-sm-5">
-                                <input type="radio" name="type" id="optionsRadiosInline1" value="1" <?php if($menu["type"] == 1): ?>checked<?php endif; ?>> 后台菜单
-                                <input type="radio" name="type" id="optionsRadiosInline2" value="0" <?php if($menu["type"] == 0): ?>checked<?php endif; ?>> 前端栏目
+                                <input type="radio" name="type" id="optionsRadiosInline1" value="1"
+                                <?php if($menu["type"] == 1): ?>checked<?php endif; ?>
+                                > 后台菜单
+                                <input type="radio" name="type" id="optionsRadiosInline2" value="0"
+                                <?php if($menu["type"] == 0): ?>checked<?php endif; ?>
+                                > 前端栏目
                             </div>
 
                         </div>
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-2 control-label">模块名:</label>
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" name="m" id="inputPassword3" placeholder="模块名如admin" value="<?php echo ($menu["m"]); ?>">
+                                <input type="text" class="form-control" name="m" id="inputPassword3"
+                                       placeholder="模块名如admin" value="<?php echo ($menu["m"]); ?>">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-2 control-label">控制器:</label>
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" name="c" id="inputPassword3" placeholder="控制器如index" value="<?php echo ($menu["c"]); ?>">
+                                <input type="text" class="form-control" name="c" id="inputPassword3"
+                                       placeholder="控制器如index" value="<?php echo ($menu["c"]); ?>">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-2 control-label">方法:</label>
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" name="f" id="inputPassword3" placeholder="方法名如index" value="<?php echo ($menu["f"]); ?>">
+                                <input type="text" class="form-control" name="f" id="inputPassword3"
+                                       placeholder="方法名如index" value="<?php echo ($menu["f"]); ?>">
                             </div>
                         </div>
                         <!--<div class="form-group">
@@ -152,12 +160,16 @@
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-2 control-label">状态:</label>
                             <div class="col-sm-5">
-                                <input type="radio" name="status" id="optionsRadiosInline1" value="1" <?php if($menu["status"] == 1): ?>checked = "checked"<?php endif; ?>> 开启
-                                <input type="radio" name="status" id="optionsRadiosInline2" value="0" <?php if($menu["status"] == 0): ?>checked = "checked"<?php endif; ?>> 关闭
+                                <input type="radio" name="status" id="optionsRadiosInline1" value="1"
+                                <?php if($menu["status"] == 1): ?>checked = "checked"<?php endif; ?>
+                                > 开启
+                                <input type="radio" name="status" id="optionsRadiosInline2" value="0"
+                                <?php if($menu["status"] == 0): ?>checked = "checked"<?php endif; ?>
+                                > 关闭
                             </div>
 
                         </div>
-                        <input type="hidden" name="menu_id" value="<?php echo ($menu["menu_id"]); ?>" />
+                        <input type="hidden" name="menu_id" value="<?php echo ($menu["menu_id"]); ?>"/>
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
                                 <button type="button" class="btn btn-default" id="singcms-button-submit">更新</button>
@@ -183,8 +195,8 @@
 <script>
 
     var SCOPE = {
-        'save_url' : 'admin.php?c=menu&a=add',
-        'jump_url' : 'admin.php?c=menu',
+        'save_url': 'admin.php?c=menu&a=add',
+        'jump_url': 'admin.php?c=menu',
     }
 </script>
 <script src="/Public/js/admin/common.js"></script>

@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
@@ -42,7 +41,7 @@
       <label  class="sr-only">密码</label>
       <input type="password" name="password" id="inputPassword" class="form-control" placeholder="密码" required>
       <br />
-      <button class="btn btn-lg btn-primary btn-block" type="button" onclick="login.check()" >登录</button>
+      <button class="btn btn-lg btn-primary btn-block" type="button" onclick="login.check()">登录</button>
     </form>
 
 </div> <!-- /container -->

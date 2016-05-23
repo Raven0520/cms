@@ -53,10 +53,11 @@
   </div>
   <!-- Top Menu Items -->
   <ul class="nav navbar-right top-nav">
-    
+
     <!--通过公共方法获取用户名-->
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo getLoginUsername() ?> <b class="caret"></b></a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+              class="fa fa-user"></i> <?php echo getLoginUsername() ?> <b class="caret"></b></a>
       <ul class="dropdown-menu">
         <li>
           <a href="/admin.php?c=admin&a=personal"><i class="fa fa-fw fa-user"></i> 个人中心</a>
@@ -76,7 +77,7 @@
         <a href="/admin.php"><i class="fa fa-fw fa-dashboard"></i> 首页</a>
       </li>
       <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?><li <?php echo (getActive($nav["c"])); ?>>
-        <a href=" <?php echo (getAdminMenuUrl($nav)); ?> "><i class="fa fa-fw fa-bar-chart-o"></i><?php echo ($nav["name"]); ?></a>
+          <a href=" <?php echo (getAdminMenuUrl($nav)); ?> "><i class="fa fa-fw fa-bar-chart-o"></i><?php echo ($nav["name"]); ?></a>
       </li><?php endforeach; endif; else: echo "" ;endif; ?>
     </ul>
   </div>
